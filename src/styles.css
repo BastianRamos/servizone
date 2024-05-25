@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.cardMediaSize{
+    height: 18vh;
+    object-fit: fill !important;
+}
+
+.fullWidthImg{
+    width: 90vw;
+}
+
+@media (width >=820px){
+    .cardMediaSize{
+        height: 14vh;
+    }
+}
+
+@media (width >= 1200px){
+    .fullWidthImg{
+        width: 50vw;
+    }
+
+    .cardMediaSize{
+        height: 20vh;
+    }
+}
