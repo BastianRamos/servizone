@@ -34,7 +34,7 @@ export const Carrousel = () => {
     <Box sx={boxStyle}>
       {data.map((item) => (
         <Card orientation="horizontal" size="sm" key={item.src} variant="outlined">
-          <AspectRatio ratio="1" sx={{ width: '80vw' }}>
+          <AspectRatio ratio="1" className='carrouselAspectRatioSize'>
             <img
               srcSet={`${item.src}?h=120&fit=crop&auto=format&dpr=2 2x`}
               src={`${item.src}?h=120&fit=crop&auto=format`}

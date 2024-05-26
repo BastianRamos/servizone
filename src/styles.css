@@ -1,3 +1,7 @@
+*{
+    scrollbar-width: none;
+}
+
 body{
     margin: 0;
 }
@@ -5,6 +9,10 @@ body{
 .cardMediaSize{
     height: 18vh;
     object-fit: fill !important;
+}
+
+.carrouselAspectRatioSize{
+    width: 80vw;
 }
 
 .fullWidthImg{
@@ -15,6 +23,10 @@ body{
     .cardMediaSize{
         height: 14vh;
     }
+
+    .carrouselAspectRatioSize{
+        width: 40vw;
+    }
 }
 
 @media (width >= 1200px){
@@ -24,5 +36,9 @@ body{
 
     .cardMediaSize{
         height: 20vh;
+    }
+
+    .carrouselAspectRatioSize{
+        width: 30vw;
     }
 }
