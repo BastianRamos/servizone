@@ -1,3 +1,4 @@
+import { Carrousel } from "./Carrousel"
 import { Section } from "./Section"
 
 export const WorkDone = () => {
@@ -8,6 +9,7 @@ export const WorkDone = () => {
                 texto='Trabajos Realizados'
                 colorFondo="#FF621E"
             />
+            <Carrousel/>
         </>
     )
 }
