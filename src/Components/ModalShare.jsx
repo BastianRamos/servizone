@@ -35,13 +35,14 @@ const styleBoxModal = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '80vw',
+    width: '89vw',
+    height:'40vh',
     bgcolor: 'background.paper',
     boxShadow: 24,
     p: 2,
     borderRadius: 2,
     textAlign: 'center',
-    maxHeight: 200
+    alignContent:'center',
 };
 
 const styleIcon = { padding: 10 }

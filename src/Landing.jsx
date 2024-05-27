@@ -1,3 +1,4 @@
+import { ContactUs } from './Components/ContactUs'
 import { NavBar } from './Components/NavBar'
 import { Notebook } from './Components/Notebook'
 import { OurServices } from './Components/OurServices'
@@ -11,6 +12,7 @@ export const Landing = () => {
             <Notebook />
             <OurServices />
             <WorkDone />
+            <ContactUs/>
         </>
     )
 }

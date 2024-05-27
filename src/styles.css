@@ -19,11 +19,11 @@ body{
     width: 90vw;
 }
 
-@media (width >=820px){
+
+@media (width >= 820px){
     .cardMediaSize{
         height: 14vh;
     }
-
     .carrouselAspectRatioSize{
         width: 40vw;
     }
@@ -33,12 +33,14 @@ body{
     .fullWidthImg{
         width: 50vw;
     }
-
     .cardMediaSize{
         height: 20vh;
     }
-
     .carrouselAspectRatioSize{
         width: 30vw;
+    }
+    .marginForDesktop{
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }

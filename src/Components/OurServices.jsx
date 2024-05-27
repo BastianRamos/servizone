@@ -1,11 +1,11 @@
-import { Grid } from "@mui/material"
+import { Box, Grid } from "@mui/material"
 import { Section } from "./Section"
 import { CardService } from "./CardService"
 
 
 export const OurServices = () => {
     return (
-        <>
+        <Box className='marginForDesktop'>
             <Section
                 key='servicios'
                 texto="Nuestos Servicios"
@@ -66,6 +66,6 @@ export const OurServices = () => {
                     />
                 </Grid>
             </Grid>
-        </>
+        </Box>
     )
 }
