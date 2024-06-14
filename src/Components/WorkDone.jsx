@@ -1,17 +1,18 @@
 import { Box } from "@mui/material"
-import { Carrousel } from "./Carrousel"
-import { Section } from "./Section"
+import { WorkImages, Section } from "../components"
+
+const isMobile = window.matchMedia('only screen and (max-width: 768px)').matches;
 
 
 export const WorkDone = () => {
     return (
-        <Box className='marginForDesktop'>
+        <Box className='marginForDesktop' id='trabajos'>
             <Section
                 key='trabajos'
                 texto='Trabajos Realizados'
                 colorFondo="#FF621E"
             />
-            <Carrousel/>
+            <WorkImages />
         </Box>
     )
 }

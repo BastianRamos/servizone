@@ -3,7 +3,7 @@ import { Box, Divider } from "@mui/material"
 
 export const Notebook = () => {
     return (
-        <Box className='marginForDesktop'>
+        <Box className='marginForDesktop' id='top'>
             <Divider sx={{ borderTop: '6px solid #1E90FF', borderBottom: 'none', marginTop: 1, width: '20vw', float: 'left' }} />
             <Divider sx={{ borderTop: '6px solid #FF621E', borderBottom: 'none', marginTop: 2, width: '42vw', float: 'right' }} />
             <Divider sx={{ borderTop: '6px solid #1E90FF', borderBottom: 'none', marginTop: 1, width: '70vw', float: 'right' }} />

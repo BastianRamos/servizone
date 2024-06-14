@@ -1,7 +1,5 @@
-import { Box, Grid, colors } from "@mui/material"
-import { ContactButton } from "./ContactButton"
-import { Section } from "./Section"
-
+import { Box, Grid } from "@mui/material"
+import { ContactButton, Section } from "../components"
 
 const redes_contacto = [
   { src: 'public/redes_contacto/whatsapp-logo.webp', color: '#04B300', link: 'https://wa.me/+56996181785' },
@@ -10,9 +8,10 @@ const redes_contacto = [
   { src: 'public/redes_contacto/gmail-logo.webp', color: '#FFD705', link: 'mailto:servizone.cl@gmail.com' }
 ]
 
+
 export const ContactUs = () => {
   return (
-    <Box className='marginForDesktop'>
+    <Box className='marginForDesktop' id='contacto'>
       <Section
         key='contactanos'
         texto='Contáctanos'

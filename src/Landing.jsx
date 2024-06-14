@@ -1,9 +1,11 @@
-import { ContactUs } from './Components/ContactUs'
-import { Footer } from './Components/Footer'
-import { NavBar } from './Components/NavBar'
-import { Notebook } from './Components/Notebook'
-import { OurServices } from './Components/OurServices'
-import { WorkDone } from './Components/WorkDone'
+import {
+    ContactUs,
+    Footer,
+    NavBar,
+    Notebook,
+    OurServices,
+    WorkDone
+} from './components'
 
 
 export const Landing = () => {

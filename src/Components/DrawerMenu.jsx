@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-scroll"
 
 import {
   ChecklistRtl,
@@ -30,6 +31,10 @@ const imgStyle = { marginLeft: "auto", marginRight: "auto", marginTop: "6vh", ma
 export const DrawerMenu = () => {
   const [state, setState] = useState(false)
 
+  const closeMenu = () => {
+    setState(false)
+  }
+
   return (
     <>
       <IconButton
@@ -44,16 +49,27 @@ export const DrawerMenu = () => {
       <SwipeableDrawer
         anchor="top"
         open={state}
-        onClose={() => setState(false)}
+        onClose={closeMenu}
         onOpen={() => setState(true)}
       >
-        <img
-          alt="logo servizone"
-          src="./public/logos/logo-servizone.webp"
-          width={140}
-          height={140}
+        <Link
+          activeClass='active'
+          to='top'
+          spy
+          smooth={true}
+          duration={500}
+          delay={0}
+          offset={-200}
+          onClick={closeMenu}
           style={imgStyle}
-        />
+        >
+          <img
+            alt="logo servizone"
+            src="./public/logos/logo-servizone.webp"
+            width={140}
+            height={140}
+          />
+        </Link>
 
         <Box
           onClick={() => setState(false)}
@@ -61,32 +77,65 @@ export const DrawerMenu = () => {
         >
           <List>
             <Divider sx={dividerStyle} />
-            <ListItem sx={itemStyle}>
-              <ListItemButton>
-                <ListItemIcon>
-                  <Settings color="warning" />
-                </ListItemIcon>
-                <ListItemText primary="Nuestros Servicios" />
-              </ListItemButton>
-            </ListItem>
+            <Link
+              activeClass='active'
+              to='servicios'
+              spy
+              smooth={true}
+              duration={500}
+              delay={0}
+              offset={-200}
+              onClick={closeMenu}
+            >
+              <ListItem sx={itemStyle}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Settings color="warning" />
+                  </ListItemIcon>
+                  <ListItemText primary="Nuestros Servicios" />
+                </ListItemButton>
+              </ListItem>
+            </Link>
             <Divider sx={dividerStyle} />
-            <ListItem sx={itemStyle}>
-              <ListItemButton>
-                <ListItemIcon>
-                  <ChecklistRtl color="warning" />
-                </ListItemIcon>
-                <ListItemText primary="Algunos Trabajos" />
-              </ListItemButton>
-            </ListItem>
+            <Link
+              activeClass='active'
+              to='trabajos'
+              spy
+              smooth={true}
+              duration={500}
+              delay={0}
+              offset={-200}
+              onClick={closeMenu}
+            >
+              <ListItem sx={itemStyle}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <ChecklistRtl color="warning" />
+                  </ListItemIcon>
+                  <ListItemText primary="Algunos Trabajos" />
+                </ListItemButton>
+              </ListItem>
+            </Link>
             <Divider sx={dividerStyle} />
-            <ListItem sx={itemStyle}>
-              <ListItemButton>
-                <ListItemIcon>
-                  <SwitchAccount color="warning" />
-                </ListItemIcon>
-                <ListItemText primary="Redes de Contacto" />
-              </ListItemButton>
-            </ListItem>
+            <Link
+              activeClass='active'
+              to='contacto'
+              spy
+              smooth={true}
+              duration={500}
+              delay={0}
+              offset={-200}
+              onClick={closeMenu}
+            >
+              <ListItem sx={itemStyle}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <SwitchAccount color="warning" />
+                  </ListItemIcon>
+                  <ListItemText primary="Redes de Contacto" />
+                </ListItemButton>
+              </ListItem>
+            </Link>
             <Divider sx={dividerStyle} />
           </List>
           <Box sx={pinBoxStyle}>

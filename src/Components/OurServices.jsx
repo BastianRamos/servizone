@@ -1,11 +1,10 @@
 import { Box, Grid } from "@mui/material"
-import { Section } from "./Section"
-import { CardService } from "./CardService"
+import { Section, CardService } from "../components"
 
 
 export const OurServices = () => {
     return (
-        <Box className='marginForDesktop'>
+        <Box className='marginForDesktop' id='servicios'>
             <Section
                 key='servicios'
                 texto="Nuestos Servicios"

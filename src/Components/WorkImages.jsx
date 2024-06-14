@@ -1,35 +1,35 @@
-import { 
-    AspectRatio,
-    Box,
-    Card 
+import {
+  AspectRatio,
+  Box,
+  Card
 } from "@mui/joy"
 
 const boxStyle = {
-  display: 'flex',
-  gap: 1,
   py: 1,
+  gap: 1,
+  display: 'flex',
   overflow: 'auto',
-  // width: '98vw',
   scrollSnapType: 'x mandatory',
-  '& > *': {
-    scrollSnapAlign: 'center',
-  },
+  '& > *': { scrollSnapAlign: 'center' },
   '::-webkit-scrollbar': { display: 'none' },
 }
 
 const data = [
-  {src: 'public/trabajos/trabajo1.webp'},
-  {src: 'public/trabajos/trabajo2.webp'},
-  {src: 'public/trabajos/trabajo3.webp'},
-  {src: 'public/trabajos/trabajo4.webp'},
-  {src: 'public/trabajos/trabajo5.webp'},
-  {src: 'public/trabajos/trabajo6.webp'},
-  {src: 'public/trabajos/trabajo7.webp'},
-  {src: 'public/trabajos/trabajo8.webp'},
+  { src: 'public/trabajos/trabajo1.webp' },
+  { src: 'public/trabajos/trabajo2.webp' },
+  { src: 'public/trabajos/trabajo3.webp' },
+  { src: 'public/trabajos/trabajo4.webp' },
+  { src: 'public/trabajos/trabajo5.webp' },
+  { src: 'public/trabajos/trabajo6.webp' },
+  { src: 'public/trabajos/trabajo7.webp' },
+  { src: 'public/trabajos/trabajo8.webp' },
+  { src: 'public/trabajos/trabajo9.webp' },
+  { src: 'public/trabajos/trabajo10.webp' },
+  { src: 'public/trabajos/trabajo11.webp' },
 ]
 
 
-export const Carrousel = () => {
+export const WorkImages = () => {
   return (
     <Box sx={boxStyle}>
       {data.map((item) => (

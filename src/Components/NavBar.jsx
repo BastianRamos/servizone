@@ -5,14 +5,13 @@ import {
     Typography
 } from '@mui/material';
 
-import { DrawerMenu } from './DrawerMenu';
-import { ModalShare } from './ModalShare';
+import { DrawerMenu, ModalShare } from '../components'
 
 
 export const NavBar = () => {
     return (
-        <Box>
-            <AppBar position="static" sx={{ boxShadow: 'none' }}>
+        <Box mb={8}>
+            <AppBar position="fixed" sx={{ boxShadow: 'none' }}>
                 <Toolbar variant="regular">
                     <DrawerMenu />
                     <Typography sx={{ flexGrow: 1 }} /> {/* <- empuja a la derecha el ModalShare */}
