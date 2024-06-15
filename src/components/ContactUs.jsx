@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material"
-import { ContactButton, Section } from "/src/components"
+import { ContactButton, Section } from "/src/Components"
 
 const redes_contacto = [
   { src: '/public/redes_contacto/whatsapp-logo.webp', color: '#04B300', link: 'https://wa.me/+56996181785' },
