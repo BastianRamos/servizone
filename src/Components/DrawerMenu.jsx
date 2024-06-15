@@ -65,7 +65,7 @@ export const DrawerMenu = () => {
         >
           <img
             alt="logo servizone"
-            src="./public/logos/logo-servizone.webp"
+            src="logos/logo-servizone.webp"
             width={140}
             height={140}
           />

@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material"
 import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
 
 const boxImgStyle = {
-    backgroundImage: `url('public/computador-footer.webp')`,
+    backgroundImage: `url('computador-footer.webp')`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
 }

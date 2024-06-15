@@ -15,17 +15,17 @@ const boxStyle = {
 }
 
 const data = [
-  { src: 'public/trabajos/trabajo1.webp' },
-  { src: 'public/trabajos/trabajo2.webp' },
-  { src: 'public/trabajos/trabajo3.webp' },
-  { src: 'public/trabajos/trabajo4.webp' },
-  { src: 'public/trabajos/trabajo5.webp' },
-  { src: 'public/trabajos/trabajo6.webp' },
-  { src: 'public/trabajos/trabajo7.webp' },
-  { src: 'public/trabajos/trabajo8.webp' },
-  { src: 'public/trabajos/trabajo9.webp' },
-  { src: 'public/trabajos/trabajo10.webp' },
-  { src: 'public/trabajos/trabajo11.webp' },
+  { src: 'trabajos/trabajo1.webp' },
+  { src: 'trabajos/trabajo2.webp' },
+  { src: 'trabajos/trabajo3.webp' },
+  { src: 'trabajos/trabajo4.webp' },
+  { src: 'trabajos/trabajo5.webp' },
+  { src: 'trabajos/trabajo6.webp' },
+  { src: 'trabajos/trabajo7.webp' },
+  { src: 'trabajos/trabajo8.webp' },
+  { src: 'trabajos/trabajo9.webp' },
+  { src: 'trabajos/trabajo10.webp' },
+  { src: 'trabajos/trabajo11.webp' },
 ]
 
 
