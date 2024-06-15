@@ -5,7 +5,7 @@ import {
     Notebook,
     OurServices,
     WorkDone
-} from '/src/components'
+} from 'src/components'
 
 
 export const Landing = () => {
