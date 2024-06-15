@@ -1,5 +1,5 @@
 import { Box } from "@mui/material"
-import { WorkImages, Section } from "../components"
+import { WorkImages, Section } from "/src/components"
 
 const isMobile = window.matchMedia('only screen and (max-width: 768px)').matches;
 

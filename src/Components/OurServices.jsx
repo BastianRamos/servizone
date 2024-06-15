@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material"
-import { Section, CardService } from "../components"
+import { Section, CardService } from "/src/components"
 
 
 export const OurServices = () => {
@@ -14,7 +14,7 @@ export const OurServices = () => {
                 <Grid item xs={6} sm={4} md={2}>
                     <CardService
                         key={'reparacion'}
-                        urlImg={'svg_services/reparacion-notebook.svg'}
+                        urlImg={'/public/svg_services/reparacion-notebook.svg'}
                         altImg={'imagen reparacion notebook'}
                         texto={'Reparación de computadoras'}
                     />
@@ -23,7 +23,7 @@ export const OurServices = () => {
                 <Grid item xs={6} sm={4} md={2}>
                     <CardService
                         key={'mantencion'}
-                        urlImg={'svg_services/mantencion-notebook.svg'}
+                        urlImg={'/public/svg_services/mantencion-notebook.svg'}
                         altImg={'imagen mantencion notebook'}
                         texto={'Mantención de computadoras'}
                     />
@@ -32,7 +32,7 @@ export const OurServices = () => {
                 <Grid item xs={6} sm={4} md={2}>
                     <CardService
                         key={'celular_tablet'}
-                        urlImg={'svg_services/android.svg'}
+                        urlImg={'/public/svg_services/android.svg'}
                         altImg={'smartphone android'}
                         texto={'Reparación de celular y tablet'}
                     />
@@ -41,7 +41,7 @@ export const OurServices = () => {
                 <Grid item xs={6} sm={4} md={2}>
                     <CardService
                         key={'recuperacion_datos'}
-                        urlImg={'svg_services/recuperacion_datos_basura.svg'}
+                        urlImg={'/public/svg_services/recuperacion_datos_basura.svg'}
                         altImg={'imagen de sacar datos de la basura'}
                         texto={'Recuperación de datos'}
                     />
@@ -50,7 +50,7 @@ export const OurServices = () => {
                 <Grid item xs={6} sm={4} md={2}>
                     <CardService
                         key={'asesoria'}
-                        urlImg={'svg_services/asesoria.svg'}
+                        urlImg={'/public/svg_services/asesoria.svg'}
                         altImg={'imagen asesoria compra de equipos'}
                         texto={'Asesoría en compra de equipos'}
                     />
@@ -59,7 +59,7 @@ export const OurServices = () => {
                 <Grid item xs={6} sm={4} md={2}>
                     <CardService
                         key={'desarrollo_web'}
-                        urlImg={'svg_services/dev_web.svg'}
+                        urlImg={'/public/svg_services/dev_web.svg'}
                         altImg={'imagen desarrollador web'}
                         texto={'Desarrollo web'}
                     />

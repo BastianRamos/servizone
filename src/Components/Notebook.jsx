@@ -14,7 +14,7 @@ export const Notebook = () => {
                 <img
                     className="fullWidthImg"
                     alt="Notebook con logo de Servizone"
-                    src="logos/laptop-open.webp"
+                    src="/public/logos/laptop-open.webp"
                 />
             </Box>
 

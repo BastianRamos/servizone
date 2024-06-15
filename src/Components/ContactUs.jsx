@@ -1,11 +1,11 @@
 import { Box, Grid } from "@mui/material"
-import { ContactButton, Section } from "../components"
+import { ContactButton, Section } from "/src/components"
 
 const redes_contacto = [
-  { src: 'redes_contacto/whatsapp-logo.webp', color: '#04B300', link: 'https://wa.me/+56996181785' },
-  { src: 'redes_contacto/facebook-logo.webp', color: '#1E90FF', link: 'https://www.facebook.com/profile.php?id=61557674667228&locale=es_LA' },
-  { src: 'redes_contacto/instagram-logo.webp', color: '#E1204E', link: 'https://www.instagram.com/servizone.cl/' },
-  { src: 'redes_contacto/gmail-logo.webp', color: '#FFD705', link: 'mailto:servizone.cl@gmail.com' }
+  { src: '/public/redes_contacto/whatsapp-logo.webp', color: '#04B300', link: 'https://wa.me/+56996181785' },
+  { src: '/public/redes_contacto/facebook-logo.webp', color: '#1E90FF', link: 'https://www.facebook.com/profile.php?id=61557674667228&locale=es_LA' },
+  { src: '/public/redes_contacto/instagram-logo.webp', color: '#E1204E', link: 'https://www.instagram.com/servizone.cl/' },
+  { src: '/public/redes_contacto/gmail-logo.webp', color: '#FFD705', link: 'mailto:servizone.cl@gmail.com' }
 ]
 
 

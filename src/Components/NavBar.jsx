@@ -5,7 +5,7 @@ import {
     Typography
 } from '@mui/material';
 
-import { DrawerMenu, ModalShare } from '../components'
+import { DrawerMenu, ModalShare } from '/src/components'
 
 
 export const NavBar = () => {
