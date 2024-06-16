@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material"
-import { Section, CardService } from "/src/Components"
+import { Section, CardService } from "../components"
 
 
 export const OurServices = () => {
