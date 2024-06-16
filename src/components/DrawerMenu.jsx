@@ -25,7 +25,7 @@ import {
 const dividerStyle = { opacity: .6 }
 const itemStyle = { height: "10vh", width: "100vw" }
 const pinBoxStyle = { paddingTop: "8vh", paddingBottom: "2vh", textAlign: "center" }
-const imgStyle = { marginLeft: "auto", marginRight: "auto", marginTop: "6vh", marginBottom: "6vh" }
+const imgStyle = { marginLeft: "auto", marginRight: "auto", marginTop: "6vh", marginBottom: "6vh", cursor: 'pointer' }
 
 
 export const DrawerMenu = () => {
