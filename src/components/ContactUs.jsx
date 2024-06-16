@@ -17,7 +17,12 @@ export const ContactUs = () => {
         texto='Contáctanos'
         side="right"
       />
-      <Grid container spacing={2} my={4}>
+      <Grid
+        container
+        spacing={2}
+        my={4}
+        py={10}
+      >
         {redes_contacto.map((redContacto) => (
           <Grid item xs={12} sm={6} md={3} key={redContacto.link}>
             <ContactButton

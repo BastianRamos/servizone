@@ -4,7 +4,10 @@ import { WorkImages, Section } from "../components"
 
 export const WorkDone = () => {
     return (
-        <Box className='marginForDesktop' id='trabajos'>
+        <Box
+            className='marginForDesktop'
+            id='trabajos'
+        >
             <Section
                 key='trabajos'
                 texto='Trabajos Realizados'

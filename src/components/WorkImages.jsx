@@ -6,8 +6,9 @@ import {
 import { Grid } from "@mui/material";
 
 const boxStyle = {
-  py: 1,
+  py: 10,
   gap: 1,
+  backgroundColor: '#FFF1EB',
   display: 'flex',
   overflow: 'auto',
   scrollSnapType: 'x mandatory',
@@ -64,11 +65,15 @@ export const WorkImages = () => {
           justifyContent="space-around"
           alignItems="center"
           spacing={1}
+          sx={{ backgroundColor: '#FFF1EB' }}
+          py={10}
+          pr={1}
         >
           {images.map((img) => (
             <Grid
               item
               sm={4}
+              key={img.src}
             >
               <img
                 srcSet={`${img.src}?h=120&fit=crop&auto=format&dpr=2 2x`}

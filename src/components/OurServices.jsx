@@ -1,17 +1,36 @@
 import { Box, Grid } from "@mui/material"
 import { Section, CardService } from "../components"
 
+const itemStyle = { pb: 2, }
+
 
 export const OurServices = () => {
     return (
-        <Box className='marginForDesktop' id='servicios'>
+        <Box
+            className='marginForDesktop'
+            id='servicios'
+            pt={6}
+        >
             <Section
                 key='servicios'
                 texto="Nuestos Servicios"
                 side="right"
             />
-            <Grid container rowSpacing={2} columnSpacing={{ xs: 2, md: 3 }} pl={1} pr={1} pb={1}>
-                <Grid item xs={6} sm={4} md={2}>
+            <Grid
+                container
+                rowSpacing={2}
+                columnSpacing={1}
+                px={1}
+                py={10}
+                sx={{ backgroundColor: '#ECF5FF' }}
+            >
+                <Grid
+                    item
+                    xs={6}
+                    sm={4}
+                    md={2}
+                    sx={itemStyle}
+                >
                     <CardService
                         key={'reparacion'}
                         urlImg={'/svg_services/reparacion-notebook.svg'}
@@ -20,7 +39,13 @@ export const OurServices = () => {
                     />
                 </Grid>
 
-                <Grid item xs={6} sm={4} md={2}>
+                <Grid
+                    item
+                    xs={6}
+                    sm={4}
+                    md={2}
+                    sx={itemStyle}
+                >
                     <CardService
                         key={'mantencion'}
                         urlImg={'/svg_services/mantencion-notebook.svg'}
@@ -29,7 +54,13 @@ export const OurServices = () => {
                     />
                 </Grid>
 
-                <Grid item xs={6} sm={4} md={2}>
+                <Grid
+                    item
+                    xs={6}
+                    sm={4}
+                    md={2}
+                    sx={itemStyle}
+                >
                     <CardService
                         key={'celular_tablet'}
                         urlImg={'/svg_services/android.svg'}
@@ -38,7 +69,13 @@ export const OurServices = () => {
                     />
                 </Grid>
 
-                <Grid item xs={6} sm={4} md={2}>
+                <Grid
+                    item
+                    xs={6}
+                    sm={4}
+                    md={2}
+                    sx={itemStyle}
+                >
                     <CardService
                         key={'recuperacion_datos'}
                         urlImg={'/svg_services/recuperacion_datos_basura.svg'}
@@ -47,7 +84,13 @@ export const OurServices = () => {
                     />
                 </Grid>
 
-                <Grid item xs={6} sm={4} md={2}>
+                <Grid
+                    item
+                    xs={6}
+                    sm={4}
+                    md={2}
+                    sx={itemStyle}
+                >
                     <CardService
                         key={'asesoria'}
                         urlImg={'/svg_services/asesoria.svg'}
@@ -56,7 +99,13 @@ export const OurServices = () => {
                     />
                 </Grid>
 
-                <Grid item xs={6} sm={4} md={2}>
+                <Grid
+                    item
+                    xs={6}
+                    sm={4}
+                    md={2}
+                    sx={itemStyle}
+                >
                     <CardService
                         key={'desarrollo_web'}
                         urlImg={'/svg_services/dev_web.svg'}

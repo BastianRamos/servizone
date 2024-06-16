@@ -58,8 +58,8 @@ export const DrawerMenu = () => {
           spy
           smooth={true}
           duration={500}
-          delay={0}
-          offset={-200}
+          delay={400}
+          offset={-160}
           onClick={closeMenu}
           style={imgStyle}
         >
@@ -83,8 +83,7 @@ export const DrawerMenu = () => {
               spy
               smooth={true}
               duration={500}
-              delay={0}
-              offset={-200}
+              delay={400}
               onClick={closeMenu}
             >
               <ListItem sx={itemStyle}>
@@ -103,8 +102,8 @@ export const DrawerMenu = () => {
               spy
               smooth={true}
               duration={500}
-              delay={0}
-              offset={-200}
+              delay={400}
+              offset={-100}
               onClick={closeMenu}
             >
               <ListItem sx={itemStyle}>
@@ -123,8 +122,8 @@ export const DrawerMenu = () => {
               spy
               smooth={true}
               duration={500}
-              delay={0}
-              offset={-200}
+              delay={400}
+              offset={-160}
               onClick={closeMenu}
             >
               <ListItem sx={itemStyle}>
