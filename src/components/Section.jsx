@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material"
+import { Box, Fade, Typography } from "@mui/material"
+import { useEffect, useState } from "react"
 
 
 export const Section = ({ texto, colorFondo = '#1E90FF', colorTexto = '#ffffff', side = 'left' }) => {
@@ -16,11 +17,20 @@ export const Section = ({ texto, colorFondo = '#1E90FF', colorTexto = '#ffffff',
         alignItems: 'center'
     }
 
+    const [active, setActive] = useState(false)
+
+    useEffect(() => {
+        setActive(true)
+    }, [])
+
+
     return (
-        <Box sx={boxStyle}>
-            <Typography color={colorTexto} fontSize={'large'} >
-                {texto}
-            </Typography>
-        </Box>
+        <Fade in={active} timeout={6000}>
+            <Box sx={boxStyle} id="section">
+                <Typography color={colorTexto} fontSize={'large'} >
+                    {texto}
+                </Typography>
+            </Box>
+        </Fade>
     )
 }

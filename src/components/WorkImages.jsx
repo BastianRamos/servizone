@@ -6,7 +6,7 @@ import {
 import { Grid } from "@mui/material";
 
 const boxStyle = {
-  py: 10,
+  py: 4,
   gap: 1,
   backgroundColor: '#FFF1EB',
   display: 'flex',
@@ -41,9 +41,9 @@ export const WorkImages = () => {
           {images.map((img) => (
             <Card
               orientation="horizontal"
-              size="sm"
+              size="none"
               key={img.src}
-              variant="outlined"
+              variant="plain"
             >
               <AspectRatio
                 ratio="1"
@@ -66,7 +66,7 @@ export const WorkImages = () => {
           alignItems="center"
           spacing={1}
           sx={{ backgroundColor: '#FFF1EB' }}
-          py={10}
+          py={4}
           pr={1}
         >
           {images.map((img) => (
@@ -80,7 +80,7 @@ export const WorkImages = () => {
                 src={`${img.src}?h=120&fit=crop&auto=format`}
                 alt={img.src}
                 width='100%'
-                style={{ borderRadius: 4 }}
+                style={{ borderRadius: 2 }}
               />
             </Grid>
           )

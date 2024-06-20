@@ -11,17 +11,21 @@ const redes_contacto = [
 
 export const ContactUs = () => {
   return (
-    <Box className='marginForDesktop' id='contacto'>
+    <Box
+      className="marginForDesktop"
+      id="contacto"
+      pt={10}
+    >
       <Section
-        key='contactanos'
-        texto='Contáctanos'
+        key="contactanos"
+        texto="Contáctanos"
         side="right"
       />
       <Grid
         container
         spacing={2}
         my={4}
-        py={10}
+        py={2}
       >
         {redes_contacto.map((redContacto) => (
           <Grid item xs={12} sm={6} md={3} key={redContacto.link}>

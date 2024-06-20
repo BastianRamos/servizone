@@ -5,8 +5,8 @@ export const ContactButton = ({ imgUrl, blurColor, contactUrl }) => {
 
   const boxStyle = {
     boxShadow: `0 0 6rem ${blurColor}`,
-    borderRadius: 2,
-    width: '80%',
+    borderRadius: 1,
+    width: '70%',
     marginY: 6,
     padding: 1,
     marginLeft: 'auto',
@@ -18,7 +18,7 @@ export const ContactButton = ({ imgUrl, blurColor, contactUrl }) => {
   return (
     <a href={contactUrl} target='_blank' >
       <Box sx={boxStyle} >
-        <img src={imgUrl} width='60%' />
+        <img src={imgUrl} width='50%' />
       </Box>
     </a>
   )

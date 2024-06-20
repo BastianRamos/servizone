@@ -7,6 +7,7 @@ export const WorkDone = () => {
         <Box
             className='marginForDesktop'
             id='trabajos'
+            pt={10}
         >
             <Section
                 key='trabajos'

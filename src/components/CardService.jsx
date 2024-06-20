@@ -2,11 +2,12 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 
 const cardStyle = {
     maxWidth: 345,
-    height: 220,
+    height: 240,
     alignContent: 'center',
     padding: 1,
     boxShadow: 'none',
-    border: '1px solid lightgray'
+    border: '1px solid lightgray',
+    borderRadius: 0
 }
 
 
