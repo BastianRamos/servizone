@@ -1,9 +1,14 @@
 import { useState } from "react";
-import { Share } from "@mui/icons-material"
+
+import {
+    HighlightOff,
+    Share
+} from "@mui/icons-material"
 
 import {
     Backdrop,
     Box,
+    Button,
     Fade,
     Grow,
     IconButton,
@@ -36,13 +41,13 @@ const styleBoxModal = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '89vw',
-    height:'40vh',
+    height: '40vh',
     bgcolor: 'background.paper',
     boxShadow: 24,
     p: 2,
     borderRadius: 2,
     textAlign: 'center',
-    alignContent:'center',
+    alignContent: 'center',
 };
 
 const styleIcon = { padding: 10 }
@@ -52,72 +57,170 @@ export const ModalShare = () => {
     const [open, setOpen] = useState(false);
     const shareUrl = window.location.href
 
+    const openModal = () => {
+        setOpen(true)
+    }
+
+    const closeModal = () => {
+        setOpen(false)
+    }
+
     return (
         <>
-            <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="compartir"
-                onClick={() => setOpen(true)}
+            <Fade
+                in={true}
+                timeout={40000}
             >
-                <Share fontSize='large' />
-            </IconButton>
+                <IconButton
+                    color="inherit"
+                    aria-label="compartir"
+                    onClick={openModal}
+                >
+                    <Share fontSize='large' />
+                </IconButton>
+            </Fade>
+
             <Modal
-                aria-labelledby="transition-modal-title"
-                aria-describedby="transition-modal-description"
                 open={open}
-                onClose={() => setOpen(false)}
+                onClose={closeModal}
                 closeAfterTransition
                 slots={{ backdrop: Backdrop }}
                 slotProps={{ backdrop: { timeout: 500 } }}
             >
-                <Fade in={open}>
+                <Fade
+                    in={open}
+                    timeout={500}
+                >
                     <Box sx={styleBoxModal}>
-                        <Typography id="transition-modal-title" variant="h6" component="h2" mt={1}>
+                        <Typography
+                            id="modal-title"
+                            variant="h6"
+                            component="h2"
+                            mt={1}
+                            color="primary"
+                        >
                             Compártenos donde gustes :)
                         </Typography>
+
                         <Box mt={2}>
-                            <Grow in={open} {...(open && { timeout: 1000 })}>
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 1200 })}
+                            >
                                 <WhatsappShareButton url={shareUrl}>
-                                    <WhatsappIcon size={40} round style={styleIcon} />
+                                    <WhatsappIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </WhatsappShareButton>
                             </Grow>
-                            <Grow in={open} {...(open && { timeout: 1200 })}>
+
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 1400 })}
+                            >
                                 <FacebookShareButton url={shareUrl}>
-                                    <FacebookIcon size={40} round style={styleIcon} />
+                                    <FacebookIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </FacebookShareButton>
                             </Grow>
-                            <Grow in={open} {...(open && { timeout: 1400 })}>
+
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 1600 })}
+                            >
                                 <FacebookMessengerShareButton url={shareUrl}>
-                                    <FacebookMessengerIcon size={40} round style={styleIcon} />
+                                    <FacebookMessengerIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </FacebookMessengerShareButton>
                             </Grow>
-                            <Grow in={open} {...(open && { timeout: 1600 })}>
+
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 1800 })}
+                            >
                                 <TwitterShareButton url={shareUrl}>
-                                    <TwitterIcon size={40} round style={styleIcon} />
+                                    <TwitterIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </TwitterShareButton>
                             </Grow>
-                            <Grow in={open} {...(open && { timeout: 1800 })}>
+
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 2000 })}
+                            >
                                 <TelegramShareButton url={shareUrl}>
-                                    <TelegramIcon size={40} round style={styleIcon} />
+                                    <TelegramIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </TelegramShareButton>
                             </Grow>
-                            <Grow in={open} {...(open && { timeout: 2000 })}>
+
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 2200 })}
+                            >
                                 <EmailShareButton url={shareUrl}>
-                                    <EmailIcon size={40} round style={styleIcon} />
+                                    <EmailIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </EmailShareButton>
                             </Grow>
-                            <Grow in={open} {...(open && { timeout: 2200 })}>
+
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 2400 })}
+                            >
                                 <LinkedinShareButton url={shareUrl}>
-                                    <LinkedinIcon size={40} round style={styleIcon} />
+                                    <LinkedinIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </LinkedinShareButton>
                             </Grow>
-                            <Grow in={open} {...(open && { timeout: 2400 })}>
+
+                            <Grow
+                                in={open}
+                                {...(open && { timeout: 2600 })}
+                            >
                                 <RedditShareButton url={shareUrl}>
-                                    <RedditIcon size={40} round style={styleIcon} />
+                                    <RedditIcon
+                                        size={40}
+                                        round
+                                        style={styleIcon}
+                                    />
                                 </RedditShareButton>
                             </Grow>
                         </Box>
+                        <Grow
+                            in={open}
+                            {...(open && { timeout: 2800 })}
+                        >
+                            <Button
+                                variant="outlined"
+                                size="small"
+                                onClick={closeModal}
+                                sx={{ marginTop: 2 }}
+                                startIcon={<HighlightOff />}
+                            >
+                                Cerrar
+                            </Button>
+                        </Grow>
                     </Box>
                 </Fade>
             </Modal>

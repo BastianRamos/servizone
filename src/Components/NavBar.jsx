@@ -2,7 +2,7 @@ import {
     Box,
     Toolbar,
     AppBar,
-    Typography
+    Grid
 } from '@mui/material';
 
 import { DrawerMenu, ModalShare } from '../components'
@@ -13,9 +13,15 @@ export const NavBar = () => {
         <Box mb={8}>
             <AppBar position="fixed" sx={{ boxShadow: 'none' }}>
                 <Toolbar variant="regular">
-                    <DrawerMenu />
-                    <Typography sx={{ flexGrow: 1 }} /> {/* <- empuja a la derecha el ModalShare */}
-                    <ModalShare />
+                    <Grid container>
+                        <Grid item xs={10}>
+                            <DrawerMenu />
+                        </Grid>
+
+                        <Grid item textAlign="right" xs={2}>
+                            <ModalShare />
+                        </Grid>
+                    </Grid>
                 </Toolbar>
             </AppBar>
         </Box>
