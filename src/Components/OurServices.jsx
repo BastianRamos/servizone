@@ -7,12 +7,12 @@ export const OurServices = () => {
         <Box
             className="marginForDesktop"
             id="servicios"
-            pt={16}
         >
             <Section
                 key="servicios"
                 texto="Nuestos Servicios"
                 side="right"
+                mt={1}
             />
             <Grid
                 container

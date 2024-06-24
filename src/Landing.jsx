@@ -1,3 +1,5 @@
+import { Box, Fade } from '@mui/material'
+
 import {
     ContactUs,
     Footer,
@@ -7,12 +9,25 @@ import {
     WorkDone
 } from './components'
 
+const isMobile = window.matchMedia('only screen and (max-width: 767px)').matches
+
 
 export const Landing = () => {
     return (
         <>
             <NavBar />
             <Notebook />
+            <Box textAlign="center" >
+                <Fade
+                    in={true}
+                    timeout={6000}
+                >
+                    <img
+                        src={isMobile ? "/brands_pc.webp" : "/brands2_pc.webp"}
+                        className="opacityBrands"
+                    />
+                </Fade>
+            </Box>
             <OurServices />
             <WorkDone />
             <ContactUs />

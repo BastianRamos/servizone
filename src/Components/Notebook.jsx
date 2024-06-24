@@ -9,8 +9,8 @@ import {
 export const Notebook = () => {
     return (
         <Box
-            className='marginForDesktop'
-            id='top'
+            className="marginForDesktop"
+            id="top"
         >
             <Slide
                 direction="right"
@@ -19,11 +19,11 @@ export const Notebook = () => {
             >
                 <Divider
                     sx={{
-                        borderTop: '6px solid #1E90FF',
-                        borderBottom: 'none',
+                        borderTop: "6px solid #1E90FF",
+                        borderBottom: "none",
                         marginTop: 1,
-                        width: '20vw',
-                        float: 'left'
+                        width: "20vw",
+                        float: "left"
                     }}
                 />
             </Slide>
@@ -35,11 +35,11 @@ export const Notebook = () => {
             >
                 <Divider
                     sx={{
-                        borderTop: '6px solid #FF621E',
-                        borderBottom: 'none',
+                        borderTop: "6px solid #FF621E",
+                        borderBottom: "none",
                         marginTop: 2,
-                        width: '42vw',
-                        float: 'right'
+                        width: "42vw",
+                        float: "right"
                     }}
                 />
             </Slide>
@@ -51,11 +51,11 @@ export const Notebook = () => {
             >
                 <Divider
                     sx={{
-                        borderTop: '6px solid #1E90FF',
-                        borderBottom: 'none',
+                        borderTop: "6px solid #1E90FF",
+                        borderBottom: "none",
                         marginTop: 1,
-                        width: '70vw',
-                        float: 'right'
+                        width: "70vw",
+                        float: "right"
                     }}
                 />
             </Slide>
@@ -67,11 +67,11 @@ export const Notebook = () => {
             >
                 <Divider
                     sx={{
-                        borderTop: '6px solid #FF621E',
-                        borderBottom: 'none',
+                        borderTop: "6px solid #FF621E",
+                        borderBottom: "none",
                         marginTop: 1,
-                        width: '48vw',
-                        float: 'left'
+                        width: "24vw",
+                        float: "left"
                     }}
                 />
             </Slide>
@@ -83,11 +83,11 @@ export const Notebook = () => {
             >
                 <Divider
                     sx={{
-                        borderTop: '6px solid #1E90FF',
-                        borderBottom: 'none',
+                        borderTop: "6px solid #1E90FF",
+                        borderBottom: "none",
                         marginTop: 2,
-                        width: '30vw',
-                        float: 'right'
+                        width: "30vw",
+                        float: "right"
                     }}
                 />
             </Slide>
@@ -97,10 +97,10 @@ export const Notebook = () => {
                 timeout={4000}
             >
                 <Box
-                    display='flex'
-                    justifyContent='center'
-                    alignContent='center'
-                    width='100%'
+                    display="flex"
+                    justifyContent="center"
+                    alignContent="center"
+                    width="100%"
                 >
                     <img
                         className="fullWidthImg"
@@ -117,10 +117,10 @@ export const Notebook = () => {
             >
                 <Divider
                     sx={{
-                        borderTop: '6px solid #1E90FF',
-                        borderBottom: 'none',
-                        width: '40vw',
-                        float: 'right'
+                        borderTop: "6px solid #1E90FF",
+                        borderBottom: "none",
+                        width: "40vw",
+                        float: "right"
                     }} />
             </Slide>
 
@@ -132,11 +132,11 @@ export const Notebook = () => {
             >
                 <Divider
                     sx={{
-                        borderTop: '6px solid #FF621E',
-                        borderBottom: 'none',
+                        borderTop: "6px solid #FF621E",
+                        borderBottom: "none",
                         marginTop: 1,
-                        width: '50vw',
-                        float: 'left'
+                        width: "50vw",
+                        float: "left"
                     }}
                 />
             </Slide>

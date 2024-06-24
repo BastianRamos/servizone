@@ -3,6 +3,7 @@ import {
   Box,
   Card
 } from "@mui/joy"
+
 import { Grid } from "@mui/material";
 
 const boxStyle = {
@@ -30,7 +31,7 @@ const images = [
   { src: '/trabajos/trabajo5.webp' },
 ]
 
-const isMobile = window.matchMedia('only screen and (max-width: 768px)').matches;
+const isMobile = window.matchMedia('only screen and (max-width: 768px)').matches
 
 
 export const WorkImages = () => {
