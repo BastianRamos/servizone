@@ -12,7 +12,7 @@ export const OurServices = () => {
                 key="servicios"
                 texto="Nuestos Servicios"
                 side="right"
-                mt={1}
+                mt={10}
             />
             <Grid
                 container
