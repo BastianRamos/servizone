@@ -25,6 +25,7 @@ export const Landing = () => {
                     <img
                         src={isMobile ? "/brands_pc.webp" : "/brands2_pc.webp"}
                         className="opacityBrands"
+                        alt="imagen de marcas de computadoras"
                     />
                 </Fade>
             </Box>
