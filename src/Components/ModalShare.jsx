@@ -45,7 +45,7 @@ const styleBoxModal = {
     bgcolor: 'background.paper',
     boxShadow: 24,
     p: 2,
-    borderRadius: 2,
+    borderRadius: 1,
     textAlign: 'center',
     alignContent: 'center',
 };
@@ -73,7 +73,7 @@ export const ModalShare = () => {
             >
                 <IconButton
                     color="inherit"
-                    aria-label="compartir"
+                    aria-label="Botón para compartir página en redes sociales"
                     onClick={openModal}
                 >
                     <Share fontSize='large' />
@@ -107,7 +107,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 1200 })}
                             >
-                                <WhatsappShareButton url={shareUrl}>
+                                <WhatsappShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir en Whatsapp"
+                                >
                                     <WhatsappIcon
                                         size={40}
                                         round
@@ -120,7 +123,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 1400 })}
                             >
-                                <FacebookShareButton url={shareUrl}>
+                                <FacebookShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir en Facebook"
+                                >
                                     <FacebookIcon
                                         size={40}
                                         round
@@ -133,7 +139,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 1600 })}
                             >
-                                <FacebookMessengerShareButton url={shareUrl}>
+                                <FacebookMessengerShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir en Messenger de Facebook"
+                                >
                                     <FacebookMessengerIcon
                                         size={40}
                                         round
@@ -146,7 +155,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 1800 })}
                             >
-                                <TwitterShareButton url={shareUrl}>
+                                <TwitterShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir en Twitter, actualmente X"
+                                >
                                     <TwitterIcon
                                         size={40}
                                         round
@@ -159,7 +171,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 2000 })}
                             >
-                                <TelegramShareButton url={shareUrl}>
+                                <TelegramShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir en Telegram"
+                                >
                                     <TelegramIcon
                                         size={40}
                                         round
@@ -172,7 +187,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 2200 })}
                             >
-                                <EmailShareButton url={shareUrl}>
+                                <EmailShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir por correo electrónico"
+                                >
                                     <EmailIcon
                                         size={40}
                                         round
@@ -185,7 +203,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 2400 })}
                             >
-                                <LinkedinShareButton url={shareUrl}>
+                                <LinkedinShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir en Linkedin"
+                                >
                                     <LinkedinIcon
                                         size={40}
                                         round
@@ -198,7 +219,10 @@ export const ModalShare = () => {
                                 in={open}
                                 {...(open && { timeout: 2600 })}
                             >
-                                <RedditShareButton url={shareUrl}>
+                                <RedditShareButton
+                                    url={shareUrl}
+                                    aria-label="Compartir en Reddit"
+                                >
                                     <RedditIcon
                                         size={40}
                                         round

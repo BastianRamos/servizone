@@ -63,10 +63,10 @@ export const DrawerMenu = () => {
         <IconButton
           edge="end"
           color="inherit"
-          aria-label="menu"
+          aria-label="Botón para desplegar menú"
           onClick={openMenu}
         >
-          <Menu fontSize='large' />
+          <Menu fontSize="large" />
         </IconButton>
       </Fade>
 
@@ -77,8 +77,8 @@ export const DrawerMenu = () => {
         onOpen={openMenu}
       >
         <Link
-          activeClass='active'
-          to='top'
+          activeClass="active"
+          to="top"
           spy
           smooth={true}
           duration={500}
@@ -104,8 +104,8 @@ export const DrawerMenu = () => {
             <Divider sx={dividerStyle} />
 
             <Link
-              activeClass='active'
-              to='servicios'
+              activeClass="active"
+              to="servicios"
               spy
               smooth={true}
               duration={500}
@@ -127,8 +127,8 @@ export const DrawerMenu = () => {
             <Divider sx={dividerStyle} />
 
             <Link
-              activeClass='active'
-              to='trabajos'
+              activeClass="active"
+              to="trabajos"
               spy
               smooth={true}
               duration={500}
@@ -150,8 +150,8 @@ export const DrawerMenu = () => {
             <Divider sx={dividerStyle} />
 
             <Link
-              activeClass='active'
-              to='contacto'
+              activeClass="active"
+              to="contacto"
               spy
               smooth={true}
               duration={500}
@@ -182,7 +182,7 @@ export const DrawerMenu = () => {
             <ExpandLess
               sx={{
                 marginTop: 6,
-                cursor: 'pointer'
+                cursor: "pointer"
               }}
               onClick={closeMenu}
               color="warning"

@@ -1,5 +1,12 @@
-import { Box, Grid } from "@mui/material"
-import { ContactButton, Section } from "../components"
+import {
+  Box,
+  Grid
+} from "@mui/material"
+
+import {
+  ContactButton,
+  Section
+} from "../components"
 
 const redes_contacto = [
   {
@@ -27,33 +34,35 @@ const redes_contacto = [
 
 export const ContactUs = () => {
   return (
-    <Box
-      className="marginForDesktop"
-      id="contacto"
-      pt={10}
-    >
-      <Section
-        key="contactanos"
-        texto="Contáctanos"
-        side="right"
-      />
-      <Grid
-        container
-        spacing={2}
-        my={4}
-        py={2}
+    <section aria-label="Redes de contacto">
+      <Box
+        className="marginForDesktop"
+        id="contacto"
+        pt={10}
       >
-        {redes_contacto.map((redContacto) => (
-          <Grid item xs={12} sm={6} md={3} key={redContacto.src}>
-            <ContactButton
-              imgUrl={redContacto.src}
-              contactUrl={redContacto.link}
-              blurColor={redContacto.color}
-              alt={redContacto.src}
-            />
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+        <Section
+          key="contactanos"
+          texto="Contáctanos"
+          side="right"
+        />
+        <Grid
+          container
+          spacing={2}
+          my={4}
+          py={2}
+        >
+          {redes_contacto.map((redContacto) => (
+            <Grid item xs={12} sm={6} md={3} key={redContacto.src}>
+              <ContactButton
+                imgUrl={redContacto.src}
+                contactUrl={redContacto.link}
+                blurColor={redContacto.color}
+                alt={redContacto.src}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </section>
   )
 }

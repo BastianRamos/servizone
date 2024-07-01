@@ -1,5 +1,9 @@
-import { Box, Typography } from "@mui/material"
-import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
+import {
+    Box,
+    Typography
+} from "@mui/material"
+
+import PinDropOutlinedIcon from "@mui/icons-material/PinDropOutlined";
 
 const boxImgStyle = {
     backgroundImage: `url('/computador-footer.webp')`,
@@ -19,18 +23,27 @@ const boxColorStyle = {
 
 export const Footer = () => {
     return (
-        <Box sx={boxImgStyle}>
-            <Box sx={boxColorStyle}>
-                <PinDropOutlinedIcon />
+        <footer role="contentinfo">
+            <Box sx={boxImgStyle}>
+                <Box sx={boxColorStyle}>
+                    <PinDropOutlinedIcon />
 
-                <Typography align='center' variant="body2">
-                    Región Metropolitana, Maipú
-                </Typography>
+                    <Typography
+                        align="center"
+                        variant="body2"
+                    >
+                        Región Metropolitana, Maipú
+                    </Typography>
 
-                <Typography align='center' variant="body2" mt={2}>
-                    @2024 SERVIZONE hardware & software.
-                </Typography>
+                    <Typography
+                        align="center"
+                        variant="body2"
+                        mt={2}
+                    >
+                        @2024 SERVIZONE hardware & software.
+                    </Typography>
+                </Box>
             </Box>
-        </Box>
+        </footer>
     )
 }

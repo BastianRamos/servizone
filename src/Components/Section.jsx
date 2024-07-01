@@ -1,8 +1,22 @@
-import { Box, Fade, Typography } from "@mui/material"
-import { useEffect, useState } from "react"
+import {
+    Box,
+    Fade,
+    Typography
+} from "@mui/material"
+
+import {
+    useEffect,
+    useState
+} from "react"
 
 
-export const Section = ({ texto, colorFondo = '#1E90FF', colorTexto = '#ffffff', side = 'left', mt = 12 }) => {
+export const Section = ({
+    texto,
+    colorFondo = "#1E90FF",
+    colorTexto = "#ffffff",
+    side = "left",
+    mt = 12
+}) => {
 
     const boxStyle = {
         backgroundColor: colorFondo,
@@ -23,11 +37,19 @@ export const Section = ({ texto, colorFondo = '#1E90FF', colorTexto = '#ffffff',
         setActive(true)
     }, [])
 
-
     return (
-        <Fade in={active} timeout={4000}>
-            <Box sx={boxStyle} id="section">
-                <Typography color={colorTexto} fontSize={'large'} >
+        <Fade
+            in={active}
+            timeout={4000}
+        >
+            <Box
+                sx={boxStyle}
+                id="section"
+            >
+                <Typography
+                    color={colorTexto}
+                    fontSize={'large'}
+                >
                     {texto}
                 </Typography>
             </Box>

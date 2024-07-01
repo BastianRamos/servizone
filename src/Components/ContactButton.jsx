@@ -1,7 +1,12 @@
 import { Box } from "@mui/material"
 
 
-export const ContactButton = ({ imgUrl, blurColor, contactUrl, alt }) => {
+export const ContactButton = ({
+  imgUrl,
+  blurColor,
+  contactUrl,
+  alt
+}) => {
 
   const boxStyle = {
     boxShadow: `0 0 6rem ${blurColor}`,
@@ -16,9 +21,16 @@ export const ContactButton = ({ imgUrl, blurColor, contactUrl, alt }) => {
   }
 
   return (
-    <a href={contactUrl} target='_blank' >
+    <a
+      href={contactUrl}
+      target="_blank"
+    >
       <Box sx={boxStyle} >
-        <img src={imgUrl} width='50%' alt={alt} />
+        <img
+          src={imgUrl}
+          width="50%"
+          alt={alt}
+        />
       </Box>
     </a>
   )

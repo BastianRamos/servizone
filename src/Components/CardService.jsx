@@ -18,9 +18,16 @@ const cardStyle = {
 }
 
 
-export const CardService = ({ urlImg, altImg, texto }) => {
+export const CardService = ({
+    urlImg,
+    altImg,
+    texto
+}) => {
     return (
-        <Grow in={true} timeout={6000}>
+        <Grow
+            in={true}
+            timeout={6000}
+        >
             <Card sx={cardStyle}>
                 <CardActionArea>
                     <CardMedia
