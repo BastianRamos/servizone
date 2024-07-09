@@ -31,7 +31,6 @@ export const OurServices = () => {
                     alignItems="center"
                     px={1}
                     py={4}
-                    sx={{ backgroundColor: '#ECF5FF' }}
                 >
                     <Grid
                         item

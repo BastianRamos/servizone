@@ -14,7 +14,6 @@ import {
 const boxStyle = {
   py: 4,
   gap: 1,
-  backgroundColor: '#FFF1EB',
   display: 'flex',
   overflow: 'auto',
   scrollSnapType: 'x mandatory',
@@ -142,7 +141,6 @@ export const WorkImages = () => {
           justifyContent="space-around"
           alignItems="center"
           spacing={1}
-          sx={{ backgroundColor: "#FFF1EB" }}
           py={4}
           px={1}
         >
