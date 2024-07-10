@@ -60,7 +60,7 @@ export const Comments = () => {
                 ssr={true}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={5000}
+                autoPlaySpeed={10000}
                 keyBoardControl={true}
                 transitionDuration={500}
                 containerClass="carousel-container"
