@@ -7,7 +7,8 @@ import {
   Menu,
   PinDrop,
   Settings,
-  SwitchAccount
+  SwitchAccount,
+  Recommend
 } from "@mui/icons-material"
 
 import {
@@ -151,6 +152,29 @@ export const DrawerMenu = () => {
 
             <Link
               activeClass="active"
+              to="comentarios"
+              spy
+              smooth={true}
+              duration={500}
+              delay={400}
+              offset={-220}
+              onClick={closeMenu}
+            >
+              <ListItem sx={itemStyle}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Recommend color="warning" />
+                  </ListItemIcon>
+
+                  <ListItemText primary="Clientes Felices" />
+                </ListItemButton>
+              </ListItem>
+            </Link>
+
+            <Divider sx={dividerStyle} />
+
+            <Link
+              activeClass="active"
               to="contacto"
               spy
               smooth={true}
@@ -169,6 +193,7 @@ export const DrawerMenu = () => {
                 </ListItemButton>
               </ListItem>
             </Link>
+
             <Divider sx={dividerStyle} />
           </List>
 

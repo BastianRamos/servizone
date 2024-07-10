@@ -14,7 +14,7 @@ const cardStyle = {
     padding: 1,
     boxShadow: 'none',
     border: '1px solid lightgray',
-    borderRadius: 0
+    borderRadius: 1
 }
 
 

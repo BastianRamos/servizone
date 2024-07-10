@@ -7,6 +7,7 @@ import {
     WorkDone,
     PcBrands
 } from "./components"
+import { Comments } from "./components/Comments"
 
 
 export const Landing = () => {
@@ -18,6 +19,7 @@ export const Landing = () => {
                 <PcBrands />
                 <OurServices />
                 <WorkDone />
+                <Comments />
                 <ContactUs />
             </main>
             <Footer />

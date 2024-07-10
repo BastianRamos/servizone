@@ -43,7 +43,7 @@ export const ContactUs = () => {
         <Section
           key="contactanos"
           texto="Contáctanos"
-          side="right"
+          colorFondo="#FF621E"
         />
         <Grid
           container

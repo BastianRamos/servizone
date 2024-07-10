@@ -21,7 +21,7 @@ export const Section = ({
     const boxStyle = {
         backgroundColor: colorFondo,
         marginTop: mt,
-        marginBottom: 6,
+        marginBottom: 1,
         marginLeft: side === 'left' ? 0 : '36vw',
         marginRight: side === 'left' ? '36vw' : 0,
         paddingX: 1,
