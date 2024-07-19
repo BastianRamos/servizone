@@ -14,7 +14,8 @@ import {
     List,
     ListItem,
     ListItemIcon,
-    ListItemText
+    ListItemText,
+    Fade,
 } from "@mui/material"
 
 import {
@@ -39,7 +40,7 @@ const styleContainerModal = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: isMobile ? '96vw' : '60vw',
+    width: isMobile ? '96vw' : 'auto',
     minHeight: '40vh',
     bgcolor: 'background.paper',
     boxShadow: 24,
@@ -115,12 +116,17 @@ export const CardService = ({
                         justifyContent="center"
                         alignItems="center"
                     >
-                        <Typography
-                            variant="h6"
-                            color="primary"
+                        <Grow
+                            in={modalState}
+                            timeout={1500}
                         >
-                            {modalTitle}
-                        </Typography>
+                            <Typography
+                                variant="h6"
+                                color="primary"
+                            >
+                                {modalTitle}
+                            </Typography>
+                        </Grow>
                     </Grid>
 
                     <Grid
@@ -128,23 +134,33 @@ export const CardService = ({
                         xs={2}
                         textAlign="right"
                     >
-                        <IconButton onClick={closeModal}>
-                            <CloseRounded />
-                        </IconButton>
+                        <Grow
+                            in={modalState}
+                            timeout={2000}
+                        >
+                            <IconButton onClick={closeModal}>
+                                <CloseRounded />
+                            </IconButton>
+                        </Grow>
                     </Grid>
 
                     <Grid item xs={12}>
-                        <List dense>
-                            {modalServiceList.map((service) => (
-                                <ListItem key={service}>
-                                    <ListItemIcon>
-                                        <ArrowRight />
-                                    </ListItemIcon>
+                        <Fade
+                            in={modalState}
+                            timeout={3000}
+                        >
+                            <List dense>
+                                {modalServiceList.map((service) => (
+                                    <ListItem key={service}>
+                                        <ListItemIcon>
+                                            <ArrowRight />
+                                        </ListItemIcon>
 
-                                    <ListItemText primary={service} />
-                                </ListItem>
-                            ))}
-                        </List>
+                                        <ListItemText primary={service} />
+                                    </ListItem>
+                                ))}
+                            </List>
+                        </Fade>
                     </Grid>
                 </Grid>
             </Modal>
