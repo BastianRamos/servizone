@@ -134,7 +134,7 @@ export const DrawerMenu = () => {
               smooth={true}
               duration={500}
               delay={400}
-              offset={60}
+              offset={-40}
               onClick={closeMenu}
             >
               <ListItem sx={itemStyle}>
@@ -180,7 +180,7 @@ export const DrawerMenu = () => {
               smooth={true}
               duration={500}
               delay={400}
-              offset={40}
+              offset={-60}
               onClick={closeMenu}
             >
               <ListItem sx={itemStyle}>

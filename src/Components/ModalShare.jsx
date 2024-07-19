@@ -48,7 +48,7 @@ const styleBoxModal = {
     borderRadius: 1,
     textAlign: 'center',
     alignContent: 'center',
-};
+}
 
 const styleIcon = { padding: 10 }
 

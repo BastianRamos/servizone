@@ -19,7 +19,7 @@ const responsive = {
         items: 1,
         slidesToSlide: 1
     }
-};
+}
 
 const imgs_comments = [
     { url: "comentarios/comentario_google.webp" },
