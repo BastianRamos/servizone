@@ -1,9 +1,10 @@
-import Carousel from "react-multi-carousel"
 import { Box } from "@mui/material"
 import { Section } from "./Section"
+import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 
-const responsive = {
+//Puntos de quiebre del carrusel de imágenes. Se puede definir cantidad de items y desplazamiento.
+const responsiveCarousel = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 2,
@@ -21,6 +22,7 @@ const responsive = {
     }
 }
 
+// Array con la ruta de las screenshots de cada comentario recibido.
 const imgs_comments = [
     { url: "comentarios/comentario_google.webp" },
     { url: "comentarios/comentario2_google.webp" },
@@ -28,8 +30,11 @@ const imgs_comments = [
     { url: "comentarios/comentario4_google.webp" },
     { url: "comentarios/comentario_facebook.webp" },
     { url: "comentarios/comentario2_facebook.webp" },
+    { url: "comentarios/comentario5_google.webp" },
+    { url: "comentarios/comentario6_google.webp" },
 ]
 
+//Estilo para las imágenes dentro del carrusel.
 const imgStyle = {
     borderRadius: 4,
     boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px",
@@ -56,7 +61,7 @@ export const Comments = () => {
                 swipeable={isMobile}
                 draggable={isMobile}
                 showDots={true}
-                responsive={responsive}
+                responsive={responsiveCarousel}
                 ssr={true}
                 infinite={true}
                 autoPlay={true}
@@ -68,21 +73,19 @@ export const Comments = () => {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
             >
-                {
-                    imgs_comments.map((comment) => (
-                        <Box
-                            key={comment.url}
-                            mx={1}
-                            my={4}
-                        >
-                            <img
-                                src={comment.url}
-                                alt={comment.url}
-                                style={imgStyle}
-                            />
-                        </Box>
-                    ))
-                }
+                {imgs_comments.map((comment) => (
+                    <Box
+                        key={comment.url}
+                        mx={1}
+                        my={4}
+                    >
+                        <img
+                            src={comment.url}
+                            alt={comment.url}
+                            style={imgStyle}
+                        />
+                    </Box>
+                ))}
             </Carousel>
         </section>
     )

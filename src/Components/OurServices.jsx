@@ -40,7 +40,7 @@ export const OurServices = () => {
                         urlImg="/svg_services/reparacion-notebook.svg"
                         altImg="imagen reparacion notebook"
                         cardText="Reparación de computadoras"
-                        modalTitle="Reparación de Computadora"
+                        modalTitle="Reparaciones"
                         modalServiceList={[
                             "Aumento de memoria RAM",
                             "Aumento de velocidad",
@@ -67,7 +67,7 @@ export const OurServices = () => {
                         urlImg="/svg_services/mantencion-notebook.svg"
                         altImg="imagen mantencion notebook"
                         cardText="Mantención de computadoras"
-                        modalTitle="Mantención de Computadora"
+                        modalTitle="Mantenimiento"
                         modalServiceList={[
                             "Configuración para más rapidez",
                             "Licencia para Windows y Office",
@@ -153,7 +153,7 @@ export const OurServices = () => {
                         urlImg="/svg_services/dev_web.svg"
                         altImg="imagen desarrollador web"
                         cardText="Desarrollo web"
-                        modalTitle="Desarrollo de Página Web"
+                        modalTitle="Página Web"
                         modalServiceList={[
                             "Alojamiento en la nube",
                             "Adaptable a todas las pantallas",
