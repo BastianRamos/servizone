@@ -28,7 +28,7 @@ export const Section = ({
         height: 50,
         display: 'flex',
         justifyContent: side === 'left' ? 'right' : 'left',
-        alignItems: 'center'
+        alignItems: 'center',
     }
 
     const [active, setActive] = useState(false)
@@ -47,6 +47,7 @@ export const Section = ({
                 id="section"
             >
                 <Typography
+                    className="semiBold"
                     color={colorTexto}
                     fontSize={'large'}
                 >

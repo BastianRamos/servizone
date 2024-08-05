@@ -10,7 +10,6 @@ export const Notebook = () => {
     return (
         <section
             aria-label="Imagen de computadora con el logo de servizone en el centro y barras de colores en el fondo"
-            className="marginForDesktop"
             id="top"
         >
             <Slide

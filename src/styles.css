@@ -1,13 +1,17 @@
 *{
-    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-optical-sizing: auto !important;
     font-style: normal !important;
     font-weight: 400 !important;
-    scrollbar-width: none;
+    scrollbar-width: none !important;
 }
 
 body{
     margin: 0;
+}
+
+.semiBold{
+    font-weight: 500 !important;
 }
 
 .cardMediaSize{
@@ -50,8 +54,8 @@ body{
         width: 30vw;
     }
     .marginForDesktop{
-        margin-left: 10vw;
-        margin-right: 10vw;
+        padding-left: 10vw !important;
+        padding-right: 10vw !important;
     }
     .opacityBrands{
         width: 70%;

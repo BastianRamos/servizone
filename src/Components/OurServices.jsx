@@ -10,12 +10,11 @@ export const OurServices = () => {
     return (
         <section
             aria-label="Nuestros servicios"
-            className="marginForDesktop"
             id="servicios"
         >
             <Section
                 key="servicios"
-                texto="Nuestos Servicios"
+                texto="Nuestros Servicios"
                 side="right"
                 mt={10}
             />
@@ -26,6 +25,7 @@ export const OurServices = () => {
                 direction="row"
                 justifyContent="space-evenly"
                 alignItems="center"
+                className="marginForDesktop"
                 px={1}
                 py={4}
             >
