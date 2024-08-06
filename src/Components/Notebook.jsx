@@ -15,7 +15,7 @@ export const Notebook = () => {
             <Slide
                 direction="right"
                 in={true}
-                timeout={6000}
+                timeout={8000}
             >
                 <Divider
                     sx={{
@@ -31,7 +31,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={3000}
+                timeout={7000}
             >
                 <Divider
                     sx={{
@@ -47,7 +47,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={2000}
+                timeout={6000}
             >
                 <Divider
                     sx={{
@@ -63,7 +63,7 @@ export const Notebook = () => {
             <Slide
                 direction="right"
                 in={true}
-                timeout={4000}
+                timeout={6000}
             >
                 <Divider
                     sx={{
@@ -79,7 +79,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={3000}
+                timeout={9000}
             >
                 <Divider
                     sx={{
@@ -94,7 +94,7 @@ export const Notebook = () => {
 
             <Grow
                 in={true}
-                timeout={4000}
+                timeout={8000}
             >
                 <Box
                     display="flex"
@@ -113,7 +113,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={4000}
+                timeout={6000}
             >
                 <Divider
                     sx={{
@@ -128,7 +128,7 @@ export const Notebook = () => {
             <Slide
                 direction="right"
                 in={true}
-                timeout={2000}
+                timeout={8000}
             >
                 <Divider
                     sx={{
