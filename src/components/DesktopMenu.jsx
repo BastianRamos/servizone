@@ -1,6 +1,7 @@
 import {
     Box,
     Button,
+    Grow,
     IconButton
 } from "@mui/material"
 
@@ -19,13 +20,18 @@ export const DesktopMenu = () => {
                 delay={300}
                 offset={-160}
             >
-                <IconButton>
-                    <img
-                        src='/logos/servizone_letras.webp'
-                        width={140}
-                        alt='logo servizone sólo letras'
-                    />
-                </IconButton>
+                <Grow
+                    in={true}
+                    timeout={4000}
+                >
+                    <IconButton>
+                        <img
+                            src='/logos/servizone_letras.webp'
+                            width={140}
+                            alt='logo servizone sólo letras'
+                        />
+                    </IconButton>
+                </Grow>
             </Link>
 
             <Link
@@ -37,13 +43,18 @@ export const DesktopMenu = () => {
                 delay={300}
                 offset={-140}
             >
-                <Button
-                    color='inherit'
-                    variant='text'
-                    sx={{ mx: 2 }}
+                <Grow
+                    in={true}
+                    timeout={3500}
                 >
-                    Servicios
-                </Button>
+                    <Button
+                        color='inherit'
+                        variant='text'
+                        sx={{ mx: 2 }}
+                    >
+                        Servicios
+                    </Button>
+                </Grow>
             </Link>
 
             <Link
@@ -55,13 +66,18 @@ export const DesktopMenu = () => {
                 delay={300}
                 offset={-40}
             >
-                <Button
-                    color='inherit'
-                    variant='text'
-                    sx={{ mx: 2 }}
+                <Grow
+                    in={true}
+                    timeout={3000}
                 >
-                    Trabajos
-                </Button>
+                    <Button
+                        color='inherit'
+                        variant='text'
+                        sx={{ mx: 2 }}
+                    >
+                        Trabajos
+                    </Button>
+                </Grow>
             </Link>
 
             <Link
@@ -73,13 +89,18 @@ export const DesktopMenu = () => {
                 delay={300}
                 offset={-220}
             >
-                <Button
-                    color='inherit'
-                    variant='text'
-                    sx={{ mx: 2 }}
+                <Grow
+                    in={true}
+                    timeout={2500}
                 >
-                    Comentarios
-                </Button>
+                    <Button
+                        color='inherit'
+                        variant='text'
+                        sx={{ mx: 2 }}
+                    >
+                        Comentarios
+                    </Button>
+                </Grow>
             </Link>
 
             <Link
@@ -91,13 +112,18 @@ export const DesktopMenu = () => {
                 delay={300}
                 offset={-60}
             >
-                <Button
-                    color='inherit'
-                    variant='text'
-                    sx={{ mx: 2 }}
+                <Grow
+                    in={true}
+                    timeout={2000}
                 >
-                    Contacto
-                </Button>
+                    <Button
+                        color='inherit'
+                        variant='text'
+                        sx={{ mx: 2 }}
+                    >
+                        Contacto
+                    </Button>
+                </Grow>
             </Link>
         </Box>
     )
