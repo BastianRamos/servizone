@@ -33,7 +33,6 @@ export const ContactUs = () => {
     return (
         <section
             aria-label="Redes de contacto"
-            className="marginForDesktop"
             id="contacto"
             style={{ paddingTop: 10 }}
         >
@@ -42,11 +41,13 @@ export const ContactUs = () => {
                 texto="Contáctanos"
                 colorFondo="#FF621E"
             />
+
             <Grid
                 container
                 spacing={2}
                 my={4}
                 py={2}
+                className="marginForDesktop"
             >
                 {redes_contacto.map((redContacto) => (
                     <Grid item xs={12} sm={6} md={3} key={redContacto.src}>

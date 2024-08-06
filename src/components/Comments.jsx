@@ -48,7 +48,6 @@ export const Comments = () => {
     return (
         <section
             aria-label="comentarios y calificaciones"
-            className="marginForDesktop"
             id="comentarios"
         >
             <Section
@@ -57,36 +56,38 @@ export const Comments = () => {
                 key="comentarios"
             />
 
-            <Carousel
-                swipeable={isMobile}
-                draggable={isMobile}
-                showDots={true}
-                responsive={responsiveCarousel}
-                ssr={true}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={10000}
-                keyBoardControl={true}
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-            >
-                {imgs_comments.map((comment) => (
-                    <Box
-                        key={comment.url}
-                        mx={1}
-                        my={4}
-                    >
-                        <img
-                            src={comment.url}
-                            alt={comment.url}
-                            style={imgStyle}
-                        />
-                    </Box>
-                ))}
-            </Carousel>
+            <Box className="marginForDesktop">
+                <Carousel
+                    swipeable={isMobile}
+                    draggable={isMobile}
+                    showDots={true}
+                    responsive={responsiveCarousel}
+                    ssr={true}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={10000}
+                    keyBoardControl={true}
+                    transitionDuration={500}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                >
+                    {imgs_comments.map((comment) => (
+                        <Box
+                            key={comment.url}
+                            mx={1}
+                            my={4}
+                        >
+                            <img
+                                src={comment.url}
+                                alt={comment.url}
+                                style={imgStyle}
+                            />
+                        </Box>
+                    ))}
+                </Carousel>
+            </Box>
         </section>
     )
 }

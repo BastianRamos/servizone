@@ -8,7 +8,6 @@ export const WorkDone = () => {
     return (
         <section
             aria-label="Imagenes de trabajos realizados"
-            className="marginForDesktop"
             id="trabajos"
             style={{ paddingTop: 10 }}
         >

@@ -101,7 +101,9 @@ export const WorkImages = () => {
   return (
     <>
       {isMobile ? (
-        <Box sx={boxStyle}>
+        <Box
+          sx={boxStyle}
+        >
           <ImageList
             cols={14}
             variant="woven"
@@ -142,7 +144,7 @@ export const WorkImages = () => {
           alignItems="center"
           spacing={1}
           py={4}
-          px={1}
+          className="marginForDesktop"
         >
           <ImageList
             cols={3}
