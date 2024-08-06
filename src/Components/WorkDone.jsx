@@ -4,7 +4,7 @@ import {
 } from "../components"
 
 
-export const WorkDone = () => {
+export const WorkDone = ({ isMobile }) => {
     return (
         <section
             aria-label="Imagenes de trabajos realizados"
@@ -16,7 +16,7 @@ export const WorkDone = () => {
                 texto="Trabajos Realizados"
                 colorFondo="#FF621E"
             />
-            <WorkImages />
+            <WorkImages isMobile={isMobile} />
         </section>
     )
 }

@@ -7,9 +7,9 @@ import {
 
 const redes_contacto = [
     {
-        src: '/redes_contacto/whatsapp-logo.webp',
-        color: '#04B300',
-        link: 'https://wa.me/+56996181785'
+        src: '/redes_contacto/gmail-logo.webp',
+        color: '#FFD705',
+        link: 'mailto:servizone.cl@gmail.com'
     },
     {
         src: '/redes_contacto/facebook-logo.webp',
@@ -21,11 +21,6 @@ const redes_contacto = [
         color: '#E1204E',
         link: 'https://www.instagram.com/servizone.cl/'
     },
-    {
-        src: '/redes_contacto/gmail-logo.webp',
-        color: '#FFD705',
-        link: 'mailto:servizone.cl@gmail.com'
-    }
 ]
 
 
@@ -44,6 +39,7 @@ export const ContactUs = () => {
 
             <Grid
                 container
+                justifyContent="space-evenly"
                 spacing={2}
                 my={4}
                 py={2}

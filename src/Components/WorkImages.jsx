@@ -92,20 +92,26 @@ const images = [
     title: 'Bloqueo por Bitlocker',
     subtitle: 'Lenovo Ideapad 5'
   },
+  {
+    src: '/trabajos/trabajo15.webp',
+    title: 'Mantenimiento preventivo',
+    subtitle: 'PS4 Slim'
+  },
+  {
+    src: '/trabajos/trabajo16.webp',
+    title: 'Pantallazo azul',
+    subtitle: 'Asus Vivobook'
+  },
 ]
 
-const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches
 
-
-export const WorkImages = () => {
+export const WorkImages = ({ isMobile }) => {
   return (
     <>
       {isMobile ? (
-        <Box
-          sx={boxStyle}
-        >
+        <Box sx={boxStyle}>
           <ImageList
-            cols={14}
+            cols={images.length}
             variant="woven"
           >
             {images.map((img) => (

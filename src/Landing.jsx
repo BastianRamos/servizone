@@ -5,23 +5,32 @@ import {
     Notebook,
     OurServices,
     WorkDone,
-    PcBrands
+    PcBrands,
+    Comments
 } from "./components"
-import { Comments } from "./components/Comments"
+
+const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches
 
 
 export const Landing = () => {
     return (
         <>
             <NavBar />
+
             <main aria-label="Contenido principal">
                 <Notebook />
+
                 <PcBrands />
+
                 <OurServices />
-                <WorkDone />
-                <Comments />
+
+                <WorkDone isMobile={isMobile} />
+
+                <Comments isMobile={isMobile} />
+
                 <ContactUs />
             </main>
+
             <Footer />
         </>
     )

@@ -41,10 +41,8 @@ const imgStyle = {
     width: "100%"
 }
 
-const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches
 
-
-export const Comments = () => {
+export const Comments = ({ isMobile }) => {
     return (
         <section
             aria-label="comentarios y calificaciones"
