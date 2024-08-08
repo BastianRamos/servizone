@@ -1,4 +1,7 @@
-import { useState } from "react"
+import {
+    useEffect,
+    useState
+} from "react"
 
 import {
     Card,
@@ -59,6 +62,21 @@ export const CardService = ({
 
     const [modalState, setModalState] = useState(false)
 
+    const [isPastDistance, setIsPastDistance] = useState(false)
+    const distanceFromTop = isMobile ? 200 : 400
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY
+            setIsPastDistance(scrollPosition >= distanceFromTop)
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     const openModal = () => {
         setModalState(true)
     }
@@ -70,8 +88,8 @@ export const CardService = ({
     return (
         <>
             <Grow
-                in={true}
-                timeout={6000}
+                in={isPastDistance}
+                timeout={2000}
             >
                 <Card
                     sx={cardStyle}

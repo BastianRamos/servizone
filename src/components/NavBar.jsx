@@ -1,4 +1,7 @@
-import { useEffect, useState } from 'react';
+import {
+    useEffect,
+    useState
+} from 'react';
 
 import {
     Box,
@@ -16,7 +19,7 @@ import {
     DesktopMenu
 } from '../components'
 
-const urlWhatsApp = 'https://wa.me/+56996181785'
+const URL_WHATSAPP = 'https://wa.me/+56996181785'
 
 const isMobile = window.matchMedia("only screen and (max-width: 820px)").matches
 
@@ -76,7 +79,7 @@ export const NavBar = () => {
                                         color="success"
                                         sx={{ backgroundColor: "#04B300" }}
                                         startIcon={<WhatsAppIcon />}
-                                        href={urlWhatsApp}
+                                        href={URL_WHATSAPP}
                                         target="_blank"
                                     >
                                         WhatsApp

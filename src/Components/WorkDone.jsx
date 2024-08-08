@@ -13,7 +13,7 @@ export const WorkDone = ({ isMobile }) => {
         >
             <Section
                 key="trabajos"
-                texto="Trabajos Realizados"
+                texto="Algunos Trabajos"
                 colorFondo="#FF621E"
             />
             <WorkImages isMobile={isMobile} />

@@ -14,7 +14,7 @@ export const OurServices = () => {
         >
             <Section
                 key="servicios"
-                texto="Nuestros Servicios"
+                texto="Servicios"
                 side="right"
                 mt={10}
             />

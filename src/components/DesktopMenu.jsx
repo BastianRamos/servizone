@@ -7,6 +7,16 @@ import {
 
 import { Link } from "react-scroll"
 
+const styleButton = {
+    mx: 2,
+    '&:hover': {
+        boxShadow: '0 2px #FF621E',
+        backgroundColor: 'transparent',
+        borderRadius: 0,
+        transition: '1s !important'
+    }
+}
+
 
 export const DesktopMenu = () => {
     return (
@@ -50,7 +60,7 @@ export const DesktopMenu = () => {
                     <Button
                         color='inherit'
                         variant='text'
-                        sx={{ mx: 2 }}
+                        sx={styleButton}
                     >
                         Servicios
                     </Button>
@@ -73,7 +83,7 @@ export const DesktopMenu = () => {
                     <Button
                         color='inherit'
                         variant='text'
-                        sx={{ mx: 2 }}
+                        sx={styleButton}
                     >
                         Trabajos
                     </Button>
@@ -96,7 +106,7 @@ export const DesktopMenu = () => {
                     <Button
                         color='inherit'
                         variant='text'
-                        sx={{ mx: 2 }}
+                        sx={styleButton}
                     >
                         Comentarios
                     </Button>
@@ -119,7 +129,7 @@ export const DesktopMenu = () => {
                     <Button
                         color='inherit'
                         variant='text'
-                        sx={{ mx: 2 }}
+                        sx={styleButton}
                     >
                         Contacto
                     </Button>

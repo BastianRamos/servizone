@@ -24,7 +24,7 @@ const redes_contacto = [
 ]
 
 
-export const ContactUs = () => {
+export const ContactUs = ({ isMobile }) => {
     return (
         <section
             aria-label="Redes de contacto"
@@ -33,7 +33,7 @@ export const ContactUs = () => {
         >
             <Section
                 key="contactanos"
-                texto="Contáctanos"
+                texto="Contacto"
                 colorFondo="#FF621E"
             />
 
@@ -52,6 +52,7 @@ export const ContactUs = () => {
                             contactUrl={redContacto.link}
                             blurColor={redContacto.color}
                             alt={redContacto.src}
+                            isMobile={isMobile}
                         />
                     </Grid>
                 ))}

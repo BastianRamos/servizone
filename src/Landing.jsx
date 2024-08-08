@@ -28,7 +28,7 @@ export const Landing = () => {
 
                 <Comments isMobile={isMobile} />
 
-                <ContactUs />
+                <ContactUs isMobile={isMobile} />
             </main>
 
             <Footer />

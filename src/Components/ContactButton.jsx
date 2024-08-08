@@ -1,11 +1,17 @@
-import { Box } from "@mui/material"
+import { Box, Grow } from "@mui/material"
+
+import {
+  useEffect,
+  useState
+} from "react"
 
 
 export const ContactButton = ({
   imgUrl,
   blurColor,
   contactUrl,
-  alt
+  alt,
+  isMobile
 }) => {
 
   const boxStyle = {
@@ -20,18 +26,38 @@ export const ContactButton = ({
     cursor: 'pointer',
   }
 
+  const [isPastDistance, setIsPastDistance] = useState(false)
+  const distanceFromTop = isMobile ? 2100 : 3800
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY
+      setIsPastDistance(scrollPosition >= distanceFromTop)
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <a
-      href={contactUrl}
-      target="_blank"
+    <Grow
+      in={isPastDistance}
+      timeout={2000}
     >
-      <Box sx={boxStyle} >
-        <img
-          src={imgUrl}
-          width="50%"
-          alt={alt}
-        />
-      </Box>
-    </a>
+      <a
+        href={contactUrl}
+        target="_blank"
+      >
+        <Box sx={boxStyle} >
+          <img
+            src={imgUrl}
+            width="50%"
+            alt={alt}
+          />
+        </Box>
+      </a>
+    </Grow>
   )
 }
