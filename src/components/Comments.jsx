@@ -52,6 +52,7 @@ export const Comments = ({ isMobile }) => {
                 texto="Comentarios"
                 side="right"
                 key="comentarios"
+                linkTo="comentarios"
             />
 
             <Box className="marginForDesktop">

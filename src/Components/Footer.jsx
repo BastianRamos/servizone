@@ -32,7 +32,7 @@ export const Footer = () => {
                         align="center"
                         variant="body2"
                     >
-                        Región Metropolitana, Maipú
+                        Concejala Sra Hilda Porras, Maipú
                     </Typography>
 
                     <Typography

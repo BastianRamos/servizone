@@ -81,6 +81,7 @@ export const NavBar = () => {
                                         startIcon={<WhatsAppIcon />}
                                         href={URL_WHATSAPP}
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         WhatsApp
                                     </Button>

@@ -9,13 +9,16 @@ import {
     useState
 } from "react"
 
+import { Link } from "react-scroll"
+
 
 export const Section = ({
     texto,
     colorFondo = "#1E90FF",
     colorTexto = "#ffffff",
     side = "left",
-    mt = 12
+    mt = 12,
+    linkTo,
 }) => {
 
     const boxStyle = {
@@ -29,6 +32,7 @@ export const Section = ({
         display: 'flex',
         justifyContent: side === 'left' ? 'right' : 'left',
         alignItems: 'center',
+        cursor: 'pointer',
     }
 
     const [active, setActive] = useState(false)
@@ -46,13 +50,23 @@ export const Section = ({
                 sx={boxStyle}
                 id="section"
             >
-                <Typography
-                    className="semiBold"
-                    color={colorTexto}
-                    fontSize={'large'}
+                <Link
+                    activeClass="active"
+                    to={linkTo}
+                    spy
+                    smooth={true}
+                    duration={500}
+                    delay={100}
+                    offset={-140}
                 >
-                    {texto}
-                </Typography>
+                    <Typography
+                        className="semiBold"
+                        color={colorTexto}
+                        fontSize={'large'}
+                    >
+                        {texto}
+                    </Typography>
+                </Link>
             </Box>
         </Fade>
     )

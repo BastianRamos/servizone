@@ -17,6 +17,7 @@ export const OurServices = () => {
                 texto="Servicios"
                 side="right"
                 mt={10}
+                linkTo="servicios"
             />
             <Grid
                 container

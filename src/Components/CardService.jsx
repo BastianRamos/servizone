@@ -63,7 +63,7 @@ export const CardService = ({
     const [modalState, setModalState] = useState(false)
 
     const [isPastDistance, setIsPastDistance] = useState(false)
-    const distanceFromTop = isMobile ? 200 : 400
+    const distanceFromTop = isMobile ? 180 : 390
 
     useEffect(() => {
         const handleScroll = () => {

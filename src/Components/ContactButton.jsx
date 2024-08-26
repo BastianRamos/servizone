@@ -27,7 +27,7 @@ export const ContactButton = ({
   }
 
   const [isPastDistance, setIsPastDistance] = useState(false)
-  const distanceFromTop = isMobile ? 2100 : 3800
+  const distanceFromTop = isMobile ? 1900 : 3800
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +49,7 @@ export const ContactButton = ({
       <a
         href={contactUrl}
         target="_blank"
+        rel="noopener noreferrer"
       >
         <Box sx={boxStyle} >
           <img

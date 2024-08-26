@@ -120,7 +120,7 @@ export const DrawerMenu = () => {
                     <Settings color="warning" />
                   </ListItemIcon>
 
-                  <ListItemText primary="Nuestros Servicios" />
+                  <ListItemText primary="Servicios" />
                 </ListItemButton>
               </ListItem>
             </Link>
@@ -189,7 +189,7 @@ export const DrawerMenu = () => {
                     <SwitchAccount color="warning" />
                   </ListItemIcon>
 
-                  <ListItemText primary="Redes de Contacto" />
+                  <ListItemText primary="Contacto" />
                 </ListItemButton>
               </ListItem>
             </Link>
@@ -201,7 +201,7 @@ export const DrawerMenu = () => {
             <PinDrop color="action" />
 
             <Typography fontSize="small" color="gray">
-              Región Metropolitana, Maipú.
+              Concejala Sra Hilda Porras, Maipú.
             </Typography>
 
             <ExpandLess

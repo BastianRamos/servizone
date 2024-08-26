@@ -35,6 +35,7 @@ export const ContactUs = ({ isMobile }) => {
                 key="contactanos"
                 texto="Contacto"
                 colorFondo="#FF621E"
+                linkTo="contacto"
             />
 
             <Grid
