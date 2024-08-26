@@ -1,11 +1,11 @@
 import { useState } from "react"
+
 import { Link } from "react-scroll"
 
 import {
   ChecklistRtl,
   ExpandLess,
   Menu,
-  PinDrop,
   Settings,
   SwitchAccount,
   Recommend
@@ -21,9 +21,10 @@ import {
   ListItemIcon,
   ListItemText,
   Divider,
-  Typography,
   Fade
 } from "@mui/material"
+
+import { Ubication } from "./Ubication"
 
 const dividerStyle = { opacity: .6 }
 
@@ -47,7 +48,7 @@ const imgStyle = {
 }
 
 
-export const DrawerMenu = () => {
+export const DrawerMenu = ({ isMobile }) => {
   const [state, setState] = useState(false)
 
   const closeMenu = () => {
@@ -195,24 +196,21 @@ export const DrawerMenu = () => {
             </Link>
 
             <Divider sx={dividerStyle} />
+
+            <Ubication
+              isMobile={isMobile}
+              itemStyle={itemStyle}
+            />
+
+            <Divider sx={dividerStyle} />
           </List>
 
           <Box sx={pinBoxStyle}>
-            <PinDrop color="action" />
-
-            <Typography fontSize="small" color="gray">
-              Concejala Sra Hilda Porras, Maipú.
-            </Typography>
-
             <ExpandLess
-              sx={{
-                marginTop: 6,
-                cursor: "pointer"
-              }}
+              sx={{ cursor: "pointer" }}
               onClick={closeMenu}
               color="warning"
             />
-
           </Box>
         </Box>
       </SwipeableDrawer>

@@ -57,7 +57,7 @@ export const NavBar = () => {
                                 sm={9}
                             >
                                 {isMobile
-                                    ? <DrawerMenu />
+                                    ? <DrawerMenu isMobile={isMobile} />
                                     : <DesktopMenu />
                                 }
                             </Grid>

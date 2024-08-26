@@ -7,6 +7,8 @@ import {
 
 import { Link } from "react-scroll"
 
+import { Ubication } from "./Ubication"
+
 const styleButton = {
     mx: 2,
     '&:hover': {
@@ -135,6 +137,9 @@ export const DesktopMenu = () => {
                     </Button>
                 </Grow>
             </Link>
+
+
+            <Ubication />
         </Box>
     )
 }
