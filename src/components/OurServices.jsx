@@ -85,6 +85,27 @@ export const OurServices = () => {
                     lg={2}
                 >
                     <CardService
+                        key="asesoria"
+                        urlImg="/svg_services/gamer.svg"
+                        altImg="imagen control de consola de videojuegos"
+                        cardText="Mantención de consolas"
+                        modalTitle="Consolas de videojuegos"
+                        modalServiceList={[
+                            "PS3 - PS4 - XBOX - Nintendo Switch",
+                            "Desarme completo para limpieza",
+                            "Cambio de pasta térmica",
+                            "Desbloqueo de PS3 con descarga de juegos online"
+                        ]}
+                    />
+                </Grid>
+
+                <Grid
+                    item
+                    xs={6}
+                    sm={4}
+                    lg={2}
+                >
+                    <CardService
                         key="celular_tablet"
                         urlImg="/svg_services/android.svg"
                         altImg="smartphone android"
@@ -119,26 +140,6 @@ export const OurServices = () => {
                             "Pendrive",
                             "Tarjeta SD",
                             "Tarjeta Micro SD",
-                        ]}
-                    />
-                </Grid>
-
-                <Grid
-                    item
-                    xs={6}
-                    sm={4}
-                    lg={2}
-                >
-                    <CardService
-                        key="asesoria"
-                        urlImg="/svg_services/asesoria.svg"
-                        altImg="imagen asesoria compra de equipos"
-                        cardText="Asesoría tecnológica"
-                        modalTitle="Asesoría Tecnológica"
-                        modalServiceList={[
-                            "Análisis en terreno con el fin de determinar la actualización de componentes en equipos actuales o adquirir nuevos.",
-                            "Comparativa de costo y beneficio al adquirir licencias de software empresariales considerando el impacto a corto y largo plazo.",
-                            "Informe comparativo de productos electrónicos para una compra efectiva.",
                         ]}
                     />
                 </Grid>
