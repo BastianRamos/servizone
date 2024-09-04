@@ -89,7 +89,7 @@ export const OurServices = () => {
                         urlImg="/svg_services/gamer.svg"
                         altImg="imagen control de consola de videojuegos"
                         cardText="Mantención de consolas"
-                        modalTitle="Consolas de videojuegos"
+                        modalTitle="Consolas de Videojuegos"
                         modalServiceList={[
                             "PS3 - PS4 - XBOX - Nintendo Switch",
                             "Desarme completo para limpieza",
