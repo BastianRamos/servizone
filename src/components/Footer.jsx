@@ -1,9 +1,13 @@
 import {
     Box,
+    Grid,
+    IconButton,
     Typography
 } from "@mui/material"
 
-import PinDropOutlinedIcon from "@mui/icons-material/PinDropOutlined";
+import PinDropOutlinedIcon from "@mui/icons-material/PinDropOutlined"
+import FacebookIcon from "@mui/icons-material/Facebook"
+import InstagramIcon from "@mui/icons-material/Instagram"
 
 const boxImgStyle = {
     backgroundImage: `url('/computador-footer.webp')`,
@@ -12,7 +16,7 @@ const boxImgStyle = {
 }
 
 const boxColorStyle = {
-    height: 300,
+    height: 340,
     marginTop: 20,
     textAlign: 'center',
     alignContent: 'center',
@@ -20,28 +24,89 @@ const boxColorStyle = {
     backgroundColor: 'rgba(30, 144, 255, .7)'
 }
 
+const URL_FACEBOOK = "https://www.facebook.com/profile.php?id=61557674667228&locale=es_LA"
+const URL_INSTAGRAM = "https://www.instagram.com/servizone.cl/"
+
 
 export const Footer = () => {
     return (
         <footer role="contentinfo">
             <Box sx={boxImgStyle}>
                 <Box sx={boxColorStyle}>
-                    <PinDropOutlinedIcon />
+                    <Grid container>
+                        <Grid
+                            item
+                            xs={12}
+                            md={3}
+                            textAlign="center"
+                            py={3}
+                        >
+                            <Typography variant="overline">
+                                Información de contacto:
+                            </Typography>
 
-                    <Typography
-                        align="center"
-                        variant="body2"
-                    >
-                        Concejala Sra Hilda Porras, Maipú
-                    </Typography>
+                            <Typography variant="body2">
+                                +569 9618 1785
+                            </Typography>
 
-                    <Typography
-                        align="center"
-                        variant="body2"
-                        mt={2}
-                    >
-                        @2024 SERVIZONE hardware & software.
-                    </Typography>
+                            <Typography variant="body2">
+                                servizone.cl@gmail.com
+                            </Typography>
+                        </Grid>
+
+                        <Grid
+                            item
+                            xs={12}
+                            md={6}
+                        >
+                            <PinDropOutlinedIcon />
+
+                            <Typography
+                                variant="body2"
+                            >
+                                Concejala Sra Hilda Porras, Maipú
+                            </Typography>
+
+                            <Typography
+                                variant="body2"
+                                mt={1}
+                            >
+                                @2024 SERVIZONE hardware & software.
+                            </Typography>
+                        </Grid>
+
+                        <Grid
+                            item
+                            xs={12}
+                            md={3}
+                            py={3}
+                        >
+                            <Typography variant="overline">
+                                Redes sociales:
+                            </Typography>
+
+                            <Box>
+                                <IconButton
+                                    color="inherit"
+                                    href={URL_FACEBOOK}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FacebookIcon />
+                                </IconButton>
+
+                                <IconButton
+                                    color="inherit"
+                                    href={URL_INSTAGRAM}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <InstagramIcon />
+                                </IconButton>
+                            </Box>
+                        </Grid>
+                    </Grid>
+
                 </Box>
             </Box>
         </footer>
