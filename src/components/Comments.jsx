@@ -24,14 +24,16 @@ const responsiveCarousel = {
 
 // Array con la ruta de las screenshots de cada comentario recibido.
 const imgs_comments = [
-    { url: "comentarios/comentario_google.webp" },
-    { url: "comentarios/comentario2_google.webp" },
-    { url: "comentarios/comentario3_google.webp" },
-    { url: "comentarios/comentario4_google.webp" },
+    { url: "comentarios/comentario_google1.webp" },
+    { url: "comentarios/comentario_google2.webp" },
+    { url: "comentarios/comentario_google3.webp" },
+    { url: "comentarios/comentario_google4.webp" },
     { url: "comentarios/comentario_facebook.webp" },
     { url: "comentarios/comentario2_facebook.webp" },
-    { url: "comentarios/comentario5_google.webp" },
-    { url: "comentarios/comentario6_google.webp" },
+    { url: "comentarios/comentario_google5.webp" },
+    { url: "comentarios/comentario_google6.webp" },
+    { url: "comentarios/comentario_google7.webp" },
+    { url: "comentarios/comentario_google8.webp" },
 ]
 
 //Estilo para las imágenes dentro del carrusel.
