@@ -2,6 +2,7 @@ import {
     WorkImages,
     Section
 } from "../components"
+import { WorkVideos } from "./WorkVideos"
 
 
 export const WorkDone = ({ isMobile }) => {
@@ -17,7 +18,10 @@ export const WorkDone = ({ isMobile }) => {
                 colorFondo="#FF621E"
                 linkTo='trabajos'
             />
+
             <WorkImages isMobile={isMobile} />
+
+            <WorkVideos />
         </section>
     )
 }

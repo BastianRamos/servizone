@@ -21,6 +21,8 @@ const boxStyle = {
   '::-webkit-scrollbar': { display: 'none' },
 }
 
+const borderRadius = { borderRadius: 4 }
+
 const images = [
   {
     src: '/trabajos/trabajo1.webp',
@@ -131,10 +133,12 @@ export const WorkImages = ({ isMobile }) => {
                       src={`${img.src}?h=120&fit=crop&auto=format`}
                       alt={img.src}
                       loading="lazy"
+                      style={borderRadius}
                     />
                     <ImageListItemBar
                       title={img.title}
                       subtitle={img.subtitle}
+                      style={borderRadius}
                     />
                   </ImageListItem>
                 </AspectRatio>
@@ -164,12 +168,13 @@ export const WorkImages = ({ isMobile }) => {
                   src={`${img.src}?h=120&fit=crop&auto=format`}
                   alt={img.subtitle}
                   width="100%"
-                  style={{ borderRadius: 2 }}
+                  style={borderRadius}
                   loading="lazy"
                 />
                 <ImageListItemBar
                   title={img.title}
                   subtitle={img.subtitle}
+                  style={borderRadius}
                 />
               </ImageListItem>
             ))}

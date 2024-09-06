@@ -15,7 +15,7 @@ const styleButton = {
         boxShadow: '0 2px #FF621E',
         backgroundColor: 'transparent',
         borderRadius: 0,
-        transition: '1s !important'
+        transition: '.6s !important'
     }
 }
 
