@@ -1,6 +1,7 @@
 import {
     Box,
     Fade,
+    Slide,
     Typography
 } from "@mui/material"
 
@@ -33,6 +34,7 @@ export const Section = ({
         justifyContent: side === 'left' ? 'right' : 'left',
         alignItems: 'center',
         cursor: 'pointer',
+        borderRadius: '1px'
     }
 
     const [active, setActive] = useState(false)
@@ -42,9 +44,10 @@ export const Section = ({
     }, [])
 
     return (
-        <Fade
+        <Slide
             in={active}
-            timeout={4000}
+            timeout={5000}
+            direction="left"
         >
             <Box
                 sx={boxStyle}
@@ -68,6 +71,6 @@ export const Section = ({
                     </Typography>
                 </Link>
             </Box>
-        </Fade>
+        </Slide>
     )
 }

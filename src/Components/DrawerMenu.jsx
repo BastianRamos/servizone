@@ -83,8 +83,8 @@ export const DrawerMenu = ({ isMobile }) => {
           to="top"
           spy
           smooth={true}
-          duration={500}
-          delay={400}
+          duration={1500}
+          delay={500}
           offset={-160}
           onClick={closeMenu}
           style={imgStyle}
@@ -110,8 +110,8 @@ export const DrawerMenu = ({ isMobile }) => {
               to="servicios"
               spy
               smooth={true}
-              duration={500}
-              delay={400}
+              duration={1500}
+              delay={500}
               offset={-140}
               onClick={closeMenu}
             >
@@ -133,8 +133,8 @@ export const DrawerMenu = ({ isMobile }) => {
               to="trabajos"
               spy
               smooth={true}
-              duration={500}
-              delay={400}
+              duration={1500}
+              delay={500}
               offset={-40}
               onClick={closeMenu}
             >
@@ -156,8 +156,8 @@ export const DrawerMenu = ({ isMobile }) => {
               to="comentarios"
               spy
               smooth={true}
-              duration={500}
-              delay={400}
+              duration={1500}
+              delay={500}
               offset={-220}
               onClick={closeMenu}
             >
@@ -179,8 +179,8 @@ export const DrawerMenu = ({ isMobile }) => {
               to="contacto"
               spy
               smooth={true}
-              duration={500}
-              delay={400}
+              duration={1500}
+              delay={500}
               offset={-60}
               onClick={closeMenu}
             >

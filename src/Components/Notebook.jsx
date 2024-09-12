@@ -15,14 +15,14 @@ export const Notebook = () => {
             <Slide
                 direction="right"
                 in={true}
-                timeout={8000}
+                timeout={4000}
             >
                 <Divider
                     sx={{
                         borderTop: "6px solid #1E90FF",
                         borderBottom: "none",
                         marginTop: 1,
-                        width: "20vw",
+                        width: "32vw",
                         float: "left"
                     }}
                 />
@@ -31,7 +31,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={7000}
+                timeout={2000}
             >
                 <Divider
                     sx={{
@@ -47,7 +47,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={6000}
+                timeout={4000}
             >
                 <Divider
                     sx={{
@@ -63,7 +63,7 @@ export const Notebook = () => {
             <Slide
                 direction="right"
                 in={true}
-                timeout={6000}
+                timeout={5000}
             >
                 <Divider
                     sx={{
@@ -79,7 +79,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={9000}
+                timeout={4000}
             >
                 <Divider
                     sx={{
@@ -94,7 +94,7 @@ export const Notebook = () => {
 
             <Grow
                 in={true}
-                timeout={8000}
+                timeout={7000}
             >
                 <Box
                     display="flex"
@@ -113,7 +113,7 @@ export const Notebook = () => {
             <Slide
                 direction="left"
                 in={true}
-                timeout={6000}
+                timeout={1500}
             >
                 <Divider
                     sx={{
@@ -128,7 +128,7 @@ export const Notebook = () => {
             <Slide
                 direction="right"
                 in={true}
-                timeout={8000}
+                timeout={4000}
             >
                 <Divider
                     sx={{

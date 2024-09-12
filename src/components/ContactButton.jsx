@@ -27,7 +27,7 @@ export const ContactButton = ({
   }
 
   const [isPastDistance, setIsPastDistance] = useState(false)
-  const distanceFromTop = isMobile ? 1900 : 3800
+  const distanceFromTop = isMobile ? 2500 : 4300
 
   useEffect(() => {
     const handleScroll = () => {

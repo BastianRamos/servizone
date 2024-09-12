@@ -71,7 +71,7 @@ export const Footer = () => {
                                 variant="body2"
                                 mt={1}
                             >
-                                @2024 SERVIZONE hardware & software.
+                                @2024 SERVIZONE hardware & software
                             </Typography>
                         </Grid>
 

@@ -72,7 +72,7 @@ export const NavBar = () => {
                             >
                                 <Fade
                                     in={true}
-                                    timeout={isMobile ? 30000 : 6000}
+                                    timeout={isMobile ? 25000 : 6000}
                                 >
                                     <Button
                                         variant="contained"
