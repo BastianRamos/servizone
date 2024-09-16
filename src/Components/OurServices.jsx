@@ -91,10 +91,11 @@ export const OurServices = () => {
                         cardText="Mantención de consolas"
                         modalTitle="Consolas de Videojuegos"
                         modalServiceList={[
-                            "PS3 - PS4 - XBOX - Nintendo Switch",
+                            "PlayStation - XBOX - Nintendo",
                             "Desarme completo para limpieza",
                             "Cambio de pasta térmica",
-                            "Desbloqueo de PS3 con descarga de juegos online"
+                            "Aumento de almacenamiento",
+                            "Desbloqueo de PS3 con acceso online a biblioteca completa de juegos PSone, PS2, PSP y PS3"
                         ]}
                     />
                 </Grid>
