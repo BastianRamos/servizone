@@ -28,8 +28,8 @@ export const DesktopMenu = () => {
                 to="top"
                 spy
                 smooth={true}
-                duration={500}
-                delay={300}
+                duration={1500}
+                delay={500}
                 offset={-160}
             >
                 <Grow
@@ -51,9 +51,9 @@ export const DesktopMenu = () => {
                 to="servicios"
                 spy
                 smooth={true}
-                duration={500}
-                delay={300}
-                offset={-140}
+                duration={1500}
+                delay={500}
+                offset={-160}
             >
                 <Grow
                     in={true}
@@ -74,8 +74,8 @@ export const DesktopMenu = () => {
                 to="trabajos"
                 spy
                 smooth={true}
-                duration={500}
-                delay={300}
+                duration={1500}
+                delay={500}
                 offset={-40}
             >
                 <Grow
@@ -97,8 +97,8 @@ export const DesktopMenu = () => {
                 to="comentarios"
                 spy
                 smooth={true}
-                duration={500}
-                delay={300}
+                duration={1500}
+                delay={500}
                 offset={-220}
             >
                 <Grow
@@ -120,8 +120,8 @@ export const DesktopMenu = () => {
                 to="contacto"
                 spy
                 smooth={true}
-                duration={500}
-                delay={300}
+                duration={1500}
+                delay={500}
                 offset={-60}
             >
                 <Grow

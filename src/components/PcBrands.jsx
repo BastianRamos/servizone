@@ -1,6 +1,8 @@
 import {
     Box,
-    Fade
+    Fade,
+    Slide,
+    Typography
 } from "@mui/material"
 
 const isMobile = window.matchMedia("only screen and (max-width: 767px)").matches
@@ -20,6 +22,31 @@ export const PcBrands = () => {
                         alt="Imagen de marcas de computadoras"
                     />
                 </Fade>
+
+                <Slide
+                    in={true}
+                    direction="up"
+                    timeout={3000}
+                >
+                    <Box>
+                        <Typography
+                            variant="h5"
+                            color="#1E90FF"
+                            sx={{ fontWeight: "600 !important" }}
+                            mt={2}
+                        >
+                            DALE OTRA OPORTUNIDAD A TU EQUIPO
+                        </Typography>
+
+                        <Typography
+                            variant="subtitle2"
+                            color="#1E90FF"
+                            sx={{ fontWeight: "300 !important" }}
+                        >
+                            Actualiza, optimiza o repara con alguno de los servicios ofrecidos
+                        </Typography>
+                    </Box>
+                </Slide>
             </Box>
         </section>
     )

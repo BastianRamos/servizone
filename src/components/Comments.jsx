@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 import { Section } from "./Section"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
@@ -43,6 +43,8 @@ const imgStyle = {
     width: "100%"
 }
 
+const typographyStyle = { fontWeight: "300 !important", mt: 2 }
+
 
 export const Comments = ({ isMobile }) => {
     return (
@@ -56,6 +58,15 @@ export const Comments = ({ isMobile }) => {
                 key="comentarios"
                 linkTo="comentarios"
             />
+
+            <Typography
+                variant="subtitle1"
+                color="#1E90FF"
+                textAlign="center"
+                sx={typographyStyle}
+            >
+                No pases malos ratos y así como ellos obtén lo que necesitas
+            </Typography>
 
             <Box className="marginForDesktop">
                 <Carousel

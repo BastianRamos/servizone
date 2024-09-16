@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 
 const boxStyle = {
-  py: 4,
+  py: 1,
   gap: 1,
   display: 'flex',
   overflow: 'auto',

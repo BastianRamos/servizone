@@ -16,7 +16,7 @@ export const OurServices = () => {
                 key="servicios"
                 texto="Servicios"
                 side="right"
-                mt={10}
+                mt={4}
                 linkTo="servicios"
             />
             <Grid
