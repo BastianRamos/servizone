@@ -1,5 +1,6 @@
 import {
     Box,
+    Divider,
     Fade,
     Slide,
     Typography
@@ -11,7 +12,10 @@ const isMobile = window.matchMedia("only screen and (max-width: 767px)").matches
 export const PcBrands = () => {
     return (
         <section aria-label="Logo de algunas marcas de computadoras">
-            <Box textAlign="center" >
+            <Box
+                textAlign="center"
+                mt={4}
+            >
                 <Fade
                     in={true}
                     timeout={6000}
@@ -28,12 +32,13 @@ export const PcBrands = () => {
                     direction="up"
                     timeout={3000}
                 >
-                    <Box>
+                    <Box my={10}>
+                        <Divider />
                         <Typography
                             variant="h5"
                             color="#1E90FF"
                             sx={{ fontWeight: "600 !important" }}
-                            mt={2}
+                            mt={4}
                         >
                             DALE OTRA OPORTUNIDAD A TU EQUIPO
                         </Typography>
@@ -42,9 +47,11 @@ export const PcBrands = () => {
                             variant="subtitle2"
                             color="#1E90FF"
                             sx={{ fontWeight: "300 !important" }}
+                            mb={4}
                         >
                             Actualiza, optimiza o repara con alguno de los servicios ofrecidos
                         </Typography>
+                        <Divider />
                     </Box>
                 </Slide>
             </Box>

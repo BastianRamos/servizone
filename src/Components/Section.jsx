@@ -26,10 +26,10 @@ export const Section = ({
         backgroundColor: colorFondo,
         marginTop: mt,
         marginBottom: 1,
-        marginLeft: side === 'left' ? 0 : '48vw',
-        marginRight: side === 'left' ? '48vw' : 0,
+        marginLeft: side === 'left' ? 0 : '46vw',
+        marginRight: side === 'left' ? '42vw' : 0,
         paddingX: 1,
-        height: 50,
+        height: 60,
         display: 'flex',
         justifyContent: side === 'left' ? 'right' : 'left',
         alignItems: 'center',
@@ -58,14 +58,14 @@ export const Section = ({
                     to={linkTo}
                     spy
                     smooth={true}
-                    duration={500}
-                    delay={100}
-                    offset={-140}
+                    duration={1500}
+                    delay={300}
+                    offset={-200}
                 >
                     <Typography
                         className="semiBold"
                         color={colorTexto}
-                        fontSize={'large'}
+                        fontSize="large"
                     >
                         {texto}
                     </Typography>
