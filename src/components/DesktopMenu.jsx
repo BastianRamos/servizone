@@ -41,6 +41,7 @@ export const DesktopMenu = () => {
                             src='/logos/servizone_letras.webp'
                             width={140}
                             alt='logo servizone sólo letras'
+                            role="button"
                         />
                     </IconButton>
                 </Grow>
