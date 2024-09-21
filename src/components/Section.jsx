@@ -61,6 +61,7 @@ export const Section = ({
                     duration={1500}
                     delay={300}
                     offset={-200}
+                    role="button"
                 >
                     <Typography
                         className="semiBold"
