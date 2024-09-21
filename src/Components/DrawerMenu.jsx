@@ -79,6 +79,7 @@ export const DrawerMenu = ({ isMobile }) => {
         onOpen={openMenu}
       >
         <Link
+          role="button"
           activeClass="active"
           to="top"
           spy
@@ -106,6 +107,7 @@ export const DrawerMenu = ({ isMobile }) => {
             <Divider sx={dividerStyle} />
 
             <Link
+              role="button"
               activeClass="active"
               to="servicios"
               spy
@@ -129,6 +131,7 @@ export const DrawerMenu = ({ isMobile }) => {
             <Divider sx={dividerStyle} />
 
             <Link
+              role="button"
               activeClass="active"
               to="trabajos"
               spy
@@ -152,6 +155,7 @@ export const DrawerMenu = ({ isMobile }) => {
             <Divider sx={dividerStyle} />
 
             <Link
+              role="button"
               activeClass="active"
               to="comentarios"
               spy
@@ -175,6 +179,7 @@ export const DrawerMenu = ({ isMobile }) => {
             <Divider sx={dividerStyle} />
 
             <Link
+              role="button"
               activeClass="active"
               to="contacto"
               spy

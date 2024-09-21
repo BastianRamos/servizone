@@ -55,6 +55,7 @@ export const DesktopMenu = () => {
                 duration={1500}
                 delay={500}
                 offset={-160}
+                role="button"
             >
                 <Grow
                     in={true}
@@ -78,6 +79,7 @@ export const DesktopMenu = () => {
                 duration={1500}
                 delay={500}
                 offset={-40}
+                role="button"
             >
                 <Grow
                     in={true}
@@ -101,6 +103,7 @@ export const DesktopMenu = () => {
                 duration={1500}
                 delay={500}
                 offset={-220}
+                role="button"
             >
                 <Grow
                     in={true}
@@ -124,6 +127,7 @@ export const DesktopMenu = () => {
                 duration={1500}
                 delay={500}
                 offset={-60}
+                role="button"
             >
                 <Grow
                     in={true}
