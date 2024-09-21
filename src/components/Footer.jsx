@@ -91,6 +91,7 @@ export const Footer = () => {
                                     href={URL_FACEBOOK}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    aria-label="ir a facebook"
                                 >
                                     <FacebookIcon />
                                 </IconButton>
@@ -100,6 +101,7 @@ export const Footer = () => {
                                     href={URL_INSTAGRAM}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    aria-label="ir a instagram"
                                 >
                                     <InstagramIcon />
                                 </IconButton>
