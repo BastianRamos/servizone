@@ -1,4 +1,8 @@
-import { Grid, Typography } from "@mui/material"
+import {
+    Box,
+    Grid,
+    Typography
+} from "@mui/material"
 
 import {
     ContactButton,
@@ -18,7 +22,7 @@ const redes_contacto = [
     },
 ]
 
-const typographyStyle = { fontWeight: "300 !important", mt: 14, px: 2, color: "#FF621E" }
+const blueBox = { backgroundColor: "#0071DB", borderRadius: "50% 50%", p: 6, mt: 10, mx: 1 }
 
 
 export const ContactUs = ({ isMobile }) => {
@@ -60,20 +64,17 @@ export const ContactUs = ({ isMobile }) => {
                         />
                     </Grid>
                 ))}
-
-                <Grid
-                    item
-                    xs={12}
-                >
-                    <Typography
-                        variant="subtitle1"
-                        textAlign="center"
-                        sx={typographyStyle}
-                    >
-                        Contacta por el medio que gustes, busca en google maps o sigue las redes sociales
-                    </Typography>
-                </Grid>
             </Grid>
+
+            <Box sx={blueBox}>
+                <Typography
+                    variant="subtitle1"
+                    textAlign="center"
+                    color="#FFFFFF"
+                >
+                    Contacta por el medio que gustes, busca en google maps o sigue las redes sociales
+                </Typography>
+            </Box>
         </section>
     )
 }

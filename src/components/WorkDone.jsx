@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 
 import {
     WorkImages,
@@ -7,7 +7,7 @@ import {
 
 import { WorkVideos } from "./WorkVideos"
 
-const typographyStyle = { fontWeight: "300 !important", mt: 2 }
+const blueBox = { backgroundColor: "#0071DB", borderRadius: "0 0 1rem 1rem", p: .5, mx: .5 }
 
 
 export const WorkDone = ({ isMobile }) => {
@@ -24,26 +24,27 @@ export const WorkDone = ({ isMobile }) => {
                 linkTo='trabajos'
             />
 
-            <Typography
-                variant="subtitle1"
-                color="#FF621E"
-                textAlign="center"
-                sx={typographyStyle}
-            >
-                Tendrás garantía y repuestos de calidad
-            </Typography>
+            <Box sx={blueBox}>
+                <Typography
+                    variant="subtitle1"
+                    color="#FFFFFF"
+                    textAlign="center"
+                >
+                    Tendrás garantía y repuestos de calidad
+                </Typography>
+            </Box>
 
             <WorkImages isMobile={isMobile} />
 
-            <Typography
-                variant="subtitle1"
-                color="#FF621E"
-                textAlign="center"
-                sx={typographyStyle}
-            >
-                Sin marcas ni daños al manipular tu equipo
-            </Typography>
-
+            <Box sx={blueBox}>
+                <Typography
+                    variant="subtitle1"
+                    color="#FFFFFF"
+                    textAlign="center"
+                >
+                    Sin marcas ni daños al manipular tu equipo
+                </Typography>
+            </Box>
             <WorkVideos />
         </section>
     )

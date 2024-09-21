@@ -31,7 +31,7 @@ body{
 .opacityBrands{
     margin-top: .5rem;
     opacity: 20%;
-    width: 100%;
+    width: 100% !important;
 }
 
 .transformScale{

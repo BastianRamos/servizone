@@ -1,12 +1,12 @@
 import {
     Box,
-    Divider,
     Fade,
     Slide,
     Typography
 } from "@mui/material"
 
 const isMobile = window.matchMedia("only screen and (max-width: 767px)").matches
+const greenBox = { backgroundColor: "#497A00", mt: 2, mb: 8, borderRadius: "10rem 4px 10rem 4px", mx: 2 }
 
 
 export const PcBrands = () => {
@@ -15,6 +15,7 @@ export const PcBrands = () => {
             <Box
                 textAlign="center"
                 mt={4}
+                className="marginForDesktop"
             >
                 <Fade
                     in={true}
@@ -33,26 +34,26 @@ export const PcBrands = () => {
                     direction="up"
                     timeout={3000}
                 >
-                    <Box my={10}>
-                        <Divider />
+                    <Box sx={greenBox}>
                         <Typography
-                            variant="h5"
-                            color="#1E90FF"
+                            variant="h6"
+                            color="#FFFFFF"
                             sx={{ fontWeight: "600 !important" }}
-                            mt={4}
+                            pt={4}
+                            px={7}
                         >
                             DALE OTRA OPORTUNIDAD A TU EQUIPO
                         </Typography>
 
                         <Typography
                             variant="subtitle2"
-                            color="#1E90FF"
-                            sx={{ fontWeight: "300 !important" }}
-                            mb={4}
+                            color="#FFFFFF"
+                            pb={4}
+                            px={7}
+                            pt={1}
                         >
-                            Actualiza, optimiza o repara con alguno de los servicios ofrecidos
+                            Actualiza, optimiza o repara con los siguientes servicios
                         </Typography>
-                        <Divider />
                     </Box>
                 </Slide>
             </Box>

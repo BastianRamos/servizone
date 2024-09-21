@@ -43,7 +43,7 @@ const imgStyle = {
     width: "100%"
 }
 
-const typographyStyle = { fontWeight: "300 !important", mt: 2 }
+const orangeBox = { backgroundColor: "#D13F00", borderRadius: "0 0 1rem 1rem", p: .5, mx: .5 }
 
 
 export const Comments = ({ isMobile }) => {
@@ -58,15 +58,15 @@ export const Comments = ({ isMobile }) => {
                 key="comentarios"
                 linkTo="comentarios"
             />
-
-            <Typography
-                variant="subtitle1"
-                color="#1E90FF"
-                textAlign="center"
-                sx={typographyStyle}
-            >
-                No pases malos ratos y así como ellos obtén lo que necesitas
-            </Typography>
+            <Box sx={orangeBox}>
+                <Typography
+                    variant="subtitle1"
+                    color="#FFFFFF"
+                    textAlign="center"
+                >
+                    No pases malos ratos y así como ellos obtén lo que necesitas
+                </Typography>
+            </Box>
 
             <Box className="marginForDesktop">
                 <Carousel
