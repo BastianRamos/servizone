@@ -31,6 +31,7 @@ export const DesktopMenu = () => {
                 duration={1500}
                 delay={500}
                 offset={-160}
+                role="button"
             >
                 <Grow
                     in={true}
@@ -41,7 +42,6 @@ export const DesktopMenu = () => {
                             src='/logos/servizone_letras.webp'
                             width={140}
                             alt='logo servizone sólo letras'
-                            role="button"
                         />
                     </IconButton>
                 </Grow>
