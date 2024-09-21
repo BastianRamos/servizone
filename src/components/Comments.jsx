@@ -51,6 +51,7 @@ export const Comments = ({ isMobile }) => {
         <section
             aria-label="comentarios y calificaciones"
             id="comentarios"
+            style={{ marginTop: "10rem" }}
         >
             <Section
                 texto="Comentarios"

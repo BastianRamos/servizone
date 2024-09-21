@@ -127,7 +127,7 @@ export const DesktopMenu = () => {
                 smooth={true}
                 duration={1500}
                 delay={500}
-                offset={-60}
+                offset={-80}
                 role="button"
             >
                 <Grow

@@ -187,7 +187,7 @@ export const DrawerMenu = ({ isMobile }) => {
               smooth={true}
               duration={1500}
               delay={500}
-              offset={-30}
+              offset={-60}
               onClick={closeMenu}
             >
               <ListItem sx={itemStyle}>

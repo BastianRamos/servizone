@@ -22,7 +22,7 @@ const redes_contacto = [
     },
 ]
 
-const blueBox = { backgroundColor: "#0071DB", borderRadius: "50% 50%", p: 6, mt: 10, mx: 1 }
+const blueBox = { backgroundColor: "#0071DB", borderRadius: "1rem 1rem 4px 4px", p: 1, mt: 20, mx: 1 }
 
 
 export const ContactUs = ({ isMobile }) => {
@@ -30,7 +30,7 @@ export const ContactUs = ({ isMobile }) => {
         <section
             aria-label="Redes de contacto"
             id="contacto"
-            style={{ paddingTop: 10 }}
+            style={{ marginTop: "10rem" }}
         >
             <Section
                 key="contactanos"
@@ -43,7 +43,7 @@ export const ContactUs = ({ isMobile }) => {
                 container
                 justifyContent="space-evenly"
                 spacing={2}
-                my={4}
+                my={8}
                 py={2}
                 className="marginForDesktop"
             >
