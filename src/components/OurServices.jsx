@@ -6,7 +6,7 @@ import {
 } from "../components"
 
 
-export const OurServices = () => {
+export const OurServices = ({ isMobile }) => {
     return (
         <section
             aria-label="Nuestros servicios"
@@ -22,7 +22,7 @@ export const OurServices = () => {
             <Grid
                 container
                 rowSpacing={1}
-                columnSpacing={1}
+                columnSpacing={isMobile ? 1 : 2}
                 direction="row"
                 justifyContent="space-evenly"
                 alignItems="center"

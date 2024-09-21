@@ -39,9 +39,10 @@ export const DesktopMenu = () => {
                 >
                     <IconButton>
                         <img
-                            src='/logos/servizone_letras.webp'
+                            src="/logos/servizone_letras.webp"
                             width={140}
-                            alt='logo servizone sólo letras'
+                            alt="logo servizone sólo letras"
+                            loading="eager"
                         />
                     </IconButton>
                 </Grow>
@@ -62,8 +63,8 @@ export const DesktopMenu = () => {
                     timeout={3500}
                 >
                     <Button
-                        color='inherit'
-                        variant='text'
+                        color="inherit"
+                        variant="text"
                         sx={styleButton}
                     >
                         Servicios
@@ -86,8 +87,8 @@ export const DesktopMenu = () => {
                     timeout={3000}
                 >
                     <Button
-                        color='inherit'
-                        variant='text'
+                        color="inherit"
+                        variant="text"
                         sx={styleButton}
                     >
                         Trabajos
@@ -110,8 +111,8 @@ export const DesktopMenu = () => {
                     timeout={2500}
                 >
                     <Button
-                        color='inherit'
-                        variant='text'
+                        color="inherit"
+                        variant="text"
                         sx={styleButton}
                     >
                         Comentarios
@@ -134,8 +135,8 @@ export const DesktopMenu = () => {
                     timeout={2000}
                 >
                     <Button
-                        color='inherit'
-                        variant='text'
+                        color="inherit"
+                        variant="text"
                         sx={styleButton}
                     >
                         Contacto

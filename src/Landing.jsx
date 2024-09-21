@@ -9,7 +9,7 @@ import {
     Comments
 } from "./components"
 
-const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches
+const isMobile = window.matchMedia("only screen and (max-width: 821px)").matches
 
 
 export const Landing = () => {
@@ -22,7 +22,7 @@ export const Landing = () => {
 
                 <PcBrands />
 
-                <OurServices />
+                <OurServices isMobile={isMobile} />
 
                 <WorkDone isMobile={isMobile} />
 

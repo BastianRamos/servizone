@@ -17,7 +17,7 @@ export const ContactButton = ({
   const boxStyle = {
     boxShadow: `0 0 6rem ${blurColor}`,
     borderRadius: 1,
-    width: '70%',
+    width: isMobile ? '70%' : '120%',
     marginY: 6,
     padding: 1,
     marginLeft: 'auto',
@@ -27,7 +27,7 @@ export const ContactButton = ({
   }
 
   const [isPastDistance, setIsPastDistance] = useState(false)
-  const distanceFromTop = isMobile ? 2500 : 4300
+  const distanceFromTop = isMobile ? 2800 : 4200
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,11 +51,15 @@ export const ContactButton = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Box sx={boxStyle} >
+        <Box
+          className="transformScale"
+          sx={boxStyle}
+        >
           <img
             src={imgUrl}
             width="50%"
             alt={alt}
+            loading="lazy"
           />
         </Box>
       </a>

@@ -34,6 +34,14 @@ body{
     width: 100%;
 }
 
+.transformScale{
+    transition: all .4s ease-in-out !important;
+}
+
+.transformScale:hover{
+    transform: scale(1.1) !important;
+}
+
 
 @media (width >= 820px){
     .cardMediaSize{

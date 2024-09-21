@@ -95,6 +95,7 @@ export const Comments = ({ isMobile }) => {
                                 src={comment.url}
                                 alt={comment.url}
                                 style={imgStyle}
+                                loading="lazy"
                             />
                         </Box>
                     ))}

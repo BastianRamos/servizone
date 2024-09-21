@@ -95,6 +95,7 @@ export const DrawerMenu = ({ isMobile }) => {
             src="/logos/logo-servizone.webp"
             width={140}
             height={140}
+            loading="lazy"
           />
         </Link>
 

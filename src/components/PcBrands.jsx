@@ -24,6 +24,7 @@ export const PcBrands = () => {
                         src={isMobile ? "/brands_pc.webp" : "/brands2_pc.webp"}
                         className="opacityBrands"
                         alt="Imagen de marcas de computadoras"
+                        loading="eager"
                     />
                 </Fade>
 

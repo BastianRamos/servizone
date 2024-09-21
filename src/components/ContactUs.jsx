@@ -44,7 +44,13 @@ export const ContactUs = ({ isMobile }) => {
                 className="marginForDesktop"
             >
                 {redes_contacto.map((redContacto) => (
-                    <Grid item xs={12} sm={6} md={3} key={redContacto.src}>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={6}
+                        md={3}
+                        key={redContacto.src}
+                    >
                         <ContactButton
                             imgUrl={redContacto.src}
                             contactUrl={redContacto.link}
@@ -57,7 +63,8 @@ export const ContactUs = ({ isMobile }) => {
 
                 <Grid
                     item
-                    xs={12}>
+                    xs={12}
+                >
                     <Typography
                         variant="subtitle1"
                         textAlign="center"

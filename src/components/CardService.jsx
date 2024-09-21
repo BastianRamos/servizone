@@ -94,6 +94,7 @@ export const CardService = ({
                 <Card
                     sx={cardStyle}
                     onClick={openModal}
+                    className="transformScale"
                 >
                     <CardActionArea>
                         <CardMedia

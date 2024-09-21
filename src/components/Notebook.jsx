@@ -106,6 +106,7 @@ export const Notebook = () => {
                         className="fullWidthImg"
                         alt="Notebook con logo de Servizone"
                         src="/logos/laptop-open.webp"
+                        loading="eager"
                     />
                 </Box>
             </Grow>
