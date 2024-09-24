@@ -45,7 +45,7 @@ export const NavBar = () => {
         <Box mb={8}>
             <AppBar
                 position="fixed"
-                sx={{ boxShadow: 'none' }}
+                sx={{ boxShadow: "none", opacity: "96%" }}
                 color={!isMobile && !isPastDistance ? "inherit" : "primary"}
             >
                 <nav aria-label="Menú de navegación">

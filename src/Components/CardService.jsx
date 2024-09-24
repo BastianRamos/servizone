@@ -24,7 +24,7 @@ import {
 import {
     CloseRounded,
     ArrowRight
-} from '@mui/icons-material'
+} from "@mui/icons-material"
 
 const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches
 
@@ -48,7 +48,10 @@ const styleContainerModal = {
     bgcolor: 'background.paper',
     boxShadow: 24,
     borderRadius: 1,
-    padding: 1
+    padding: 1,
+    borderRight: '3px solid #1E90FF',
+    opacity: '90%'
+
 }
 
 
@@ -71,9 +74,9 @@ export const CardService = ({
             setIsPastDistance(scrollPosition >= distanceFromTop)
         }
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
         return () => {
-            window.removeEventListener('scroll', handleScroll)
+            window.removeEventListener("scroll", handleScroll)
         }
     }, [])
 
