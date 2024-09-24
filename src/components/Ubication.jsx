@@ -24,8 +24,8 @@ const styleContainerModal = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 'auto',
-    minHeight: '40vh',
+    width: '94vw',
+    minHeight: '50vh',
     bgcolor: 'background.paper',
     boxShadow: 24,
     borderRadius: 1,
@@ -121,8 +121,8 @@ export const Ubication = ({ isMobile, itemStyle }) => {
                         >
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.9473185447355!2d-70.79831972457953!3d-33.528755301526154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dda0145c0a87%3A0x994cec1483dfb4dc!2sSERVIZONE!5e0!3m2!1ses-419!2scl!4v1724655544004!5m2!1ses-419!2scl"
-                                width={isMobile ? "auto" : 600}
-                                height={isMobile ? 550 : 450}
+                                width={"100%"}
+                                height={500}
                                 style={{ border: 0 }}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade">

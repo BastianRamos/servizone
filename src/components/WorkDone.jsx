@@ -7,7 +7,7 @@ import {
 
 import { WorkVideos } from "./WorkVideos"
 
-const blueBox = { backgroundColor: "#0071DB", borderRadius: "0 0 1rem 1rem", p: .5, mx: .5 }
+const orangeBox = { backgroundColor: "#D13F00", borderRadius: "1rem 1rem 0 0", p: .5, mx: "auto", mt: 6 }
 
 
 export const WorkDone = ({ isMobile }) => {
@@ -24,7 +24,10 @@ export const WorkDone = ({ isMobile }) => {
                 linkTo='trabajos'
             />
 
-            <Box sx={blueBox}>
+            <Box
+                sx={orangeBox}
+                width={isMobile ? "96vw" : "80vw"}
+            >
                 <Typography
                     variant="subtitle1"
                     color="#FFFFFF"
@@ -36,15 +39,19 @@ export const WorkDone = ({ isMobile }) => {
 
             <WorkImages isMobile={isMobile} />
 
-            <Box sx={blueBox}>
+            <Box
+                sx={orangeBox}
+                width={isMobile ? "90vw" : "77vw"}
+            >
                 <Typography
                     variant="subtitle1"
                     color="#FFFFFF"
                     textAlign="center"
                 >
-                    Sin marcas ni daños al manipular tu equipo
+                    Sin marcas ni daños en tu equipo
                 </Typography>
             </Box>
+
             <WorkVideos />
         </section>
     )

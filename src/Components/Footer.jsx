@@ -17,7 +17,7 @@ const boxImgStyle = {
 
 const boxColorStyle = {
     height: 340,
-    marginTop: 1,
+    marginTop: .1,
     textAlign: 'center',
     alignContent: 'center',
     color: '#ffffff',

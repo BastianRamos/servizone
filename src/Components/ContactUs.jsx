@@ -22,7 +22,7 @@ const redes_contacto = [
     },
 ]
 
-const blueBox = { backgroundColor: "#0071DB", borderRadius: "1rem 1rem 4px 4px", p: 1, mt: 20, mx: 1 }
+const blueBox = { backgroundColor: "#0071DB", borderRadius: "1rem 1rem 0 0", p: 1, mt: 20, mx: .1 }
 
 
 export const ContactUs = ({ isMobile }) => {

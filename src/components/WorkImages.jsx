@@ -12,7 +12,6 @@ import {
 } from "@mui/material";
 
 const boxStyle = {
-  py: 1,
   gap: 1,
   display: 'flex',
   overflow: 'auto',
@@ -153,7 +152,7 @@ export const WorkImages = ({ isMobile }) => {
           justifyContent="space-around"
           alignItems="center"
           spacing={1}
-          py={4}
+          pb={4}
           className="marginForDesktop"
         >
           <ImageList

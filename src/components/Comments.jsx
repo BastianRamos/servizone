@@ -43,7 +43,7 @@ const imgStyle = {
     width: "100%"
 }
 
-const orangeBox = { backgroundColor: "#D13F00", borderRadius: "0 0 1rem 1rem", p: .5, mx: .5 }
+const blueBox = { backgroundColor: "#0071DB", borderRadius: "1rem 1rem 0 0", p: .5, mx: "auto", mt: 6 }
 
 
 export const Comments = ({ isMobile }) => {
@@ -59,7 +59,10 @@ export const Comments = ({ isMobile }) => {
                 key="comentarios"
                 linkTo="comentarios"
             />
-            <Box sx={orangeBox}>
+            <Box
+                sx={blueBox}
+                width={isMobile ? "96vw" : "79vw"}
+            >
                 <Typography
                     variant="subtitle1"
                     color="#FFFFFF"
@@ -90,7 +93,8 @@ export const Comments = ({ isMobile }) => {
                         <Box
                             key={comment.url}
                             mx={1}
-                            my={4}
+                            mt={1}
+                            mb={4}
                         >
                             <img
                                 src={comment.url}

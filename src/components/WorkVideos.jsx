@@ -69,8 +69,9 @@ export const WorkVideos = () => {
                     {youtube_videos.map((video) => (
                         <Box
                             key={video.url}
-                            mx={1}
-                            my={4}
+                            mx={2}
+                            mt={1}
+                            mb={2}
                         >
                             <iframe
                                 width="100%"
