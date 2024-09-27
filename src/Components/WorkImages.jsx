@@ -50,8 +50,8 @@ const images = [
   },
   {
     src: '/trabajos/trabajo6.webp',
-    title: 'Instalación de disco SSD NVMe',
-    subtitle: 'Alienware M15 R4'
+    title: 'Falla por corrosión',
+    subtitle: 'Samsung Galaxy A50'
   },
   {
     src: '/trabajos/trabajo7.webp',
@@ -101,7 +101,27 @@ const images = [
   {
     src: '/trabajos/trabajo16.webp',
     title: 'Pantallazo azul',
-    subtitle: 'Asus Vivobook'
+    subtitle: 'Notebook Asus'
+  },
+  {
+    src: '/trabajos/trabajo17.webp',
+    title: 'Formateo Windows 11',
+    subtitle: 'Asus Vivobook i3'
+  },
+  {
+    src: '/trabajos/trabajo18.webp',
+    title: 'Daño en placa madre',
+    subtitle: 'Lenovo Legion 5'
+  },
+  {
+    src: '/trabajos/trabajo19.webp',
+    title: 'Aumento de almacenamiento SSD',
+    subtitle: 'Alienware M15 R4'
+  },
+  {
+    src: '/trabajos/trabajo20.webp',
+    title: 'Diagnóstico de falla',
+    subtitle: 'PC Dell T3500'
   },
 ]
 
