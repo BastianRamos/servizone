@@ -34,6 +34,11 @@ const imgs_comments = [
     { url: "comentarios/comentario_google6.webp" },
     { url: "comentarios/comentario_google7.webp" },
     { url: "comentarios/comentario_google8.webp" },
+    { url: "comentarios/comentario_google9.webp" },
+    { url: "comentarios/comentario_google10.webp" },
+    { url: "comentarios/comentario_google11.webp" },
+    { url: "comentarios/comentario_google12.webp" },
+    { url: "comentarios/comentario_google13.webp" },
 ]
 
 //Estilo para las imágenes dentro del carrusel.
