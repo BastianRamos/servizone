@@ -52,7 +52,7 @@ export const OurServices = ({ isMobile }) => {
                             "Fallas de pantalla azul en Windows",
                             "Formateo de Windows",
                             "Ruidos extraños",
-                            "Visagras rotas o dañadas",
+                            "Diagnóstico de fallas"
                         ]}
                     />
                 </Grid>
@@ -74,6 +74,9 @@ export const OurServices = ({ isMobile }) => {
                             "Licencia para Windows y Office",
                             "Problemas de temperatura alta",
                             "Problemas de rendimiento",
+                            "Limpieza detallada",
+                            "Pasta térmica y pads térmicos",
+                            "Pila CMOS"
                         ]}
                     />
                 </Grid>
