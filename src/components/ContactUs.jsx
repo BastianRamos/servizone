@@ -72,7 +72,7 @@ export const ContactUs = ({ isMobile }) => {
                     textAlign="center"
                     color="#FFFFFF"
                 >
-                    Contacta por el medio que gustes, busca en google maps o sigue las redes sociales
+                    Busca SERVIZONE en google o sigue las redes sociales más abajo
                 </Typography>
             </Box>
         </section>

@@ -40,7 +40,7 @@ export const OurServices = ({ isMobile }) => {
                         key="reparacion"
                         urlImg="/svg_services/reparacion-notebook.svg"
                         altImg="imagen reparacion notebook"
-                        cardText="Reparación de computadoras"
+                        cardText="Reparación de Computadoras"
                         modalTitle="Reparaciones"
                         modalServiceList={[
                             "Aumento de memoria RAM",
@@ -52,7 +52,8 @@ export const OurServices = ({ isMobile }) => {
                             "Fallas de pantalla azul en Windows",
                             "Formateo de Windows",
                             "Ruidos extraños",
-                            "Diagnóstico de fallas"
+                            "Diagnóstico de fallas",
+                            "Importación de repuestos"
                         ]}
                     />
                 </Grid>
@@ -67,7 +68,7 @@ export const OurServices = ({ isMobile }) => {
                         key="mantencion"
                         urlImg="/svg_services/mantencion-notebook.svg"
                         altImg="imagen mantencion notebook"
-                        cardText="Mantención de computadoras"
+                        cardText="Mantención de Computadoras"
                         modalTitle="Mantenimiento"
                         modalServiceList={[
                             "Configuración para más rapidez",
@@ -88,17 +89,21 @@ export const OurServices = ({ isMobile }) => {
                     lg={2}
                 >
                     <CardService
-                        key="asesoria"
+                        key="consolas"
                         urlImg="/svg_services/gamer.svg"
                         altImg="imagen control de consola de videojuegos"
-                        cardText="Mantención de consolas"
+                        cardText="Consolas de Videojuegos"
                         modalTitle="Consolas de Videojuegos"
                         modalServiceList={[
                             "PlayStation - XBOX - Nintendo",
                             "Desarme completo para limpieza",
                             "Cambio de pasta térmica",
                             "Aumento de almacenamiento",
-                            "Desbloqueo de PS3 con acceso online a biblioteca completa de juegos PSone, PS2, PSP y PS3"
+                            "Reparación de mandos o controles",
+                            "Diagnóstico de fallas",
+                            "Instalación de sistema operativo",
+                            "Desbloqueo de PS3 con acceso online a biblioteca completa de juegos PSone, PS2, PSP y PS3",
+                            "Importación de repuestos"
                         ]}
                     />
                 </Grid>
@@ -113,7 +118,7 @@ export const OurServices = ({ isMobile }) => {
                         key="celular_tablet"
                         urlImg="/svg_services/android.svg"
                         altImg="smartphone android"
-                        cardText="Reparación de celular y tablet"
+                        cardText="Reparación de Celular y Tablet"
                         modalTitle="Celulares y Tablets"
                         modalServiceList={[
                             "Cambio de pantalla",
@@ -122,6 +127,7 @@ export const OurServices = ({ isMobile }) => {
                             "Contacto con líquidos",
                             "Problemas para cargar",
                             "Sonido bajo en parlantes",
+                            "Importación de repuestos"
                         ]}
                     />
                 </Grid>
@@ -133,17 +139,18 @@ export const OurServices = ({ isMobile }) => {
                     lg={2}
                 >
                     <CardService
-                        key="recuperacion_datos"
-                        urlImg="/svg_services/recuperacion_datos_basura.svg"
-                        altImg="imagen de sacar datos de la basura"
-                        cardText="Recuperación de datos"
-                        modalTitle="Recupere sus Archivos"
+                        key="asesoria"
+                        urlImg="/svg_services/asesoria.svg"
+                        altImg="imagen de asesoria"
+                        cardText="Visita Técnica"
+                        modalTitle="Asesoría Experta"
                         modalServiceList={[
-                            "Almacenamiento SSD",
-                            "Disco HDD",
-                            "Pendrive",
-                            "Tarjeta SD",
-                            "Tarjeta Micro SD",
+                            "Visita en terreno",
+                            "Soluciones remotas",
+                            "Propuestas para mejorar tiempos de trabajo",
+                            "Asesoria en compra de equipos",
+                            "Asesoria en adquisición de licencias",
+                            "Renovar equipos VS mejorar los actuales"
                         ]}
                     />
                 </Grid>
@@ -158,9 +165,10 @@ export const OurServices = ({ isMobile }) => {
                         key="desarrollo_web"
                         urlImg="/svg_services/dev_web.svg"
                         altImg="imagen desarrollador web"
-                        cardText="Desarrollo web"
+                        cardText="Desarrollo Web"
                         modalTitle="Página Web"
                         modalServiceList={[
+                            "ReactJS - CSS3 - HTML5 - Vercel",
                             "Alojamiento en la nube",
                             "Adaptable a todas las pantallas",
                             "Carga rápida",
@@ -168,7 +176,6 @@ export const OurServices = ({ isMobile }) => {
                             "Landing page",
                             "Maqueta en Figma",
                             "SEO",
-                            "Tecnologías actuales",
                         ]}
                     />
                 </Grid>

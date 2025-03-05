@@ -22,24 +22,32 @@ const responsiveCarousel = {
 
 const youtube_videos = [
     {
-        url: "https://www.youtube.com/embed/-TZt_5CDIDU?si=xE2BAThhHSXhvBhc",
-        title: "Mantención Alienware M15 R4"
+        url: "https://www.youtube.com/embed/3MeFuP4nUoU",
+        title: "Mantención PS4 Fat"
     },
     {
-        url: "https://www.youtube.com/embed/riZUV-738S4?si=gBGQh1ssFM-Wz1hr",
-        title: "HP actualización a SSD"
+        url: "https://www.youtube.com/embed/-TZt_5CDIDU?si=QHgAfbk01ipkHkVz",
+        title: "Mantención Alienware"
+    },
+    {
+        url: "https://www.youtube.com/embed/FcrD_VpgJ5M",
+        title: "Armado de PC Gamer"
     },
     {
         url: "https://www.youtube.com/embed/GoeIuZqiv20?si=GO291MWoHtuCmGT4",
         title: "Sony Vaio disco dañado"
     },
     {
-        url: "https://www.youtube.com/embed/7mmHcKKZvkI?si=ffVmL-zQr8Fkp_Ju",
-        title: "Iphone 7 cambio de bateria"
+        url: "https://www.youtube.com/embed/WSmqt-IMFD4",
+        title: "Reparación Mandos PS5"
     },
     {
         url: "https://www.youtube.com/embed/i-2C1JYgSjg?si=4oe-YnzZWve6v3bZ",
         title: "Lenovo Gaming temperatura alta"
+    },
+    {
+        url: "https://www.youtube.com/embed/FcICoNAzkdM",
+        title: "Revivimos un Acer Gamer"
     },
 ]
 
@@ -71,7 +79,7 @@ export const WorkVideos = () => {
                             key={video.url}
                             mx={2}
                             mt={1}
-                            mb={2}
+                            mb={6}
                         >
                             <iframe
                                 width="100%"
