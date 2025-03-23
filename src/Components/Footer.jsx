@@ -64,7 +64,7 @@ export const Footer = () => {
                             <Typography
                                 variant="body2"
                             >
-                                Concejala Sra Hilda Porras, Maipú
+                                El Samaritano Cinco, Maipú
                             </Typography>
 
                             <Typography
