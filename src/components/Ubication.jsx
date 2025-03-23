@@ -120,7 +120,7 @@ export const Ubication = ({ isMobile, itemStyle }) => {
                             timeout={2000}
                         >
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.9473185447355!2d-70.79831972457953!3d-33.528755301526154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dda0145c0a87%3A0x994cec1483dfb4dc!2sSERVIZONE!5e0!3m2!1ses-419!2scl!4v1724655544004!5m2!1ses-419!2scl"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.1037430327906!2d-70.7695234!3d-33.550680799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dda0145c0a87%3A0x994cec1483dfb4dc!2sSERVIZONE!5e0!3m2!1ses-419!2scl!4v1742759198780!5m2!1ses-419!2scl"
                                 width={"100%"}
                                 height={500}
                                 style={{ border: 0 }}
