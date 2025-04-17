@@ -25,28 +25,28 @@ const borderRadius = { borderRadius: 4 }
 const images = [
   {
     src: '/trabajos/trabajo1.webp',
-    title: 'Mantenimiento completo',
+    title: 'Mantenimiento',
     subtitle: 'Dell Inspiron Gaming 5577'
   },
   {
     src: '/trabajos/trabajo2.webp',
-    title: 'Temperatura de trabajo alta',
-    subtitle: 'Lenovo Ideapad Gaming 3'
+    title: 'Mantenimiento',
+    subtitle: 'Lenovo Gamer Victus'
   },
   {
     src: '/trabajos/trabajo3.webp',
-    title: 'Cambio de pantalla',
-    subtitle: 'Motorola Z2 Play'
+    title: 'Mejora de rendimiento',
+    subtitle: 'Asus ROG Strix'
   },
   {
     src: '/trabajos/trabajo4.webp',
     title: 'Disco HDD dañado',
-    subtitle: 'Dell Latitude Strike Zone año 2007'
+    subtitle: 'Dell Latitude 2007'
   },
   {
     src: '/trabajos/trabajo5.webp',
-    title: 'Fuente de poder certificada',
-    subtitle: 'PC de escritorio año 2010'
+    title: 'Mantenimiento PC Gamer',
+    subtitle: 'Intel i5 - GTX 1650'
   },
   {
     src: '/trabajos/trabajo6.webp',
@@ -60,23 +60,23 @@ const images = [
   },
   {
     src: '/trabajos/trabajo8.webp',
-    title: 'Formateo con Windows 10',
-    subtitle: 'Dell Gaming Serie 5000'
+    title: 'Reemplazo de ventiladores',
+    subtitle: 'Acer Nitro 5'
   },
   {
     src: '/trabajos/trabajo9.webp',
-    title: 'Formateo y error de encendido',
-    subtitle: 'Lenovo Ideapad y Thinkpad'
+    title: 'Reemplazo de SSD',
+    subtitle: 'HP Envy Touch i7'
   },
   {
     src: '/trabajos/trabajo10.webp',
-    title: 'Formateo con Windows 7',
-    subtitle: 'Dell Inspiron 1420 año 2008'
+    title: 'Problema de drift',
+    subtitle: 'Mando de PS5'
   },
   {
     src: '/trabajos/trabajo11.webp',
-    title: 'Aumento de almacenamiento',
-    subtitle: 'Asus'
+    title: 'Armado de PC Gamer',
+    subtitle: 'Intel i5 - RTX 4070 super'
   },
   {
     src: '/trabajos/trabajo12.webp',
@@ -122,6 +122,11 @@ const images = [
     src: '/trabajos/trabajo20.webp',
     title: 'Diagnóstico de falla',
     subtitle: 'PC Dell T3500'
+  },
+  {
+    src: '/trabajos/trabajo21.webp',
+    title: 'Importación de bateria original',
+    subtitle: 'Asus Zenbook'
   },
 ]
 
