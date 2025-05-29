@@ -28,8 +28,6 @@ const imgs_comments = [
     { url: "comentarios/comentario_google2.webp" },
     { url: "comentarios/comentario_google3.webp" },
     { url: "comentarios/comentario_google4.webp" },
-    { url: "comentarios/comentario_facebook.webp" },
-    { url: "comentarios/comentario2_facebook.webp" },
     { url: "comentarios/comentario_google5.webp" },
     { url: "comentarios/comentario_google6.webp" },
     { url: "comentarios/comentario_google7.webp" },
@@ -39,6 +37,11 @@ const imgs_comments = [
     { url: "comentarios/comentario_google11.webp" },
     { url: "comentarios/comentario_google12.webp" },
     { url: "comentarios/comentario_google13.webp" },
+    { url: "comentarios/comentario_google14.jpg" },
+    { url: "comentarios/comentario_google15.jpg" },
+    { url: "comentarios/comentario_google16.webp" },
+    { url: "comentarios/comentario_google17.webp" },
+
 ]
 
 //Estilo para las imágenes dentro del carrusel.
